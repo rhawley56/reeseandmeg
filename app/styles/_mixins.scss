@@ -1,0 +1,18 @@
+@mixin font($font-size:16px,$color:$text-color-default) {
+  $font-flat-ui: ($font-size / 14); 
+  font-size: ($font-flat-ui * 18);
+  font-weight:normal;
+  color: $color;
+}
+
+
+
+@mixin a-color($color, $color-active: mix($color, black, 80%)) {
+  color: $color;
+
+  &:hover,
+  &:focus,
+  &.active {
+    color: $color-active;
+  }
+}
