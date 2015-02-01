@@ -14,5 +14,6 @@ angular.module('reeseandmegApp')
       'AngularJS',
       'Karma'
     ];
-  })
-  .value('duScrollOffset', 50);
+    $scope.isCollapsed = 1;
+  });
+  //.value('duScrollOffset', 50);

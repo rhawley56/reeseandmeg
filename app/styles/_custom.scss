@@ -13,12 +13,29 @@
 }
 
 body {
-    font-family: 'BigCaslon';
+  //font-family: 'BigCaslon';
 }
 
 h1, h2, h3, h4, h5, h6  {
-	font-family: 'Sherina';
+	//font-family: 'Sherina';
 }
+
+nav.transparent {
+  background: rgba(0,0,0,0.8);
+
+  &.navbar-inverse .navbar-nav li a {
+    color: white;
+    &:hover {
+      background-color: black;
+    } 
+  }
+
+
+}
+
+
+
+
 
 .header-unit {
   height: 600px;
@@ -48,6 +65,26 @@ video {
 	z-index:-1;
 }
 
-video.fillWidth {
-	width: 100%;
+video.fill-screen {
+  
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.section {
+	min-height: 500px;
+}
+
+header {
+  .container-fluid {
+    @include vertical-align();
+  }
 }

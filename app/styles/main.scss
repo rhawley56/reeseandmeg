@@ -1,10 +1,20 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "compass-mixins/lib/_compass.scss";
 // endbower
 
-//@import "variables.scss";
-//@import "mixins.scss";
 
-@import "start-bootstrap.scss";
+
+//@import "variables.scss";
+@import "mixins.scss";
+
+//@import "start-bootstrap.scss";
+
+@import "palette.scss";
+
 @import "custom.scss";
+
+@import "about.scss";
+
+@import "bridal-party.scss";
