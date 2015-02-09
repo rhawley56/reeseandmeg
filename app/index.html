@@ -35,6 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a class="navbar-brand" href="#top" du-smooth-scroll>R&M</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,11 +47,20 @@
                     <li du-scrollspy="about" class="page-scroll">
                         <a href="#about" du-smooth-scroll >About</a>
                     </li>
-                    <li du-scrollspy="services" class="page-scroll">
-                        <a href="#services" du-smooth-scroll>Services</a>
+                    <li du-scrollspy="bridal-party" class="page-scroll">
+                        <a href="#bridal-party" du-smooth-scroll>Bridal Party</a>
                     </li>
-                    <li du-scrollspy="portfolio" class="page-scroll">
-                        <a href="#portfolio" du-smooth-scroll>Portfolio</a>
+                    <li du-scrollspy="schedule" class="page-scroll">
+                        <a href="#schedule" du-smooth-scroll>Schedule</a>
+                    </li>
+                    <li du-scrollspy="directions" class="page-scroll">
+                        <a href="#directions" du-smooth-scroll>Directions</a>
+                    </li>
+                    <li du-scrollspy="rsvp" class="page-scroll">
+                        <a href="#rsvp" du-smooth-scroll>RSVP</a>
+                    </li>
+                    <li du-scrollspy="registry" class="page-scroll">
+                        <a href="#registry" du-smooth-scroll>Registry</a>
                     </li>
                     <li du-scrollspy="contact" class="page-scroll">
                         <a href="#contact" du-smooth-scroll>Contact</a>
@@ -70,8 +80,8 @@
       <div id="video-container">
         <video autoplay loop class="fill-screen">
           <source src="videos/sparklers.mp4" type="video/mp4">
-          <source src="videos/sparklers.webmhd.webm" type="video/webm">
-          <source src="videos/sparklers.oggtheora.ogv" type="video/ogg">
+          <source src="videos/sparklers.webm" type="video/webm">
+          <source src="videos/sparklers.ogv" type="video/ogg">
           Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
       </div><!-- end video-container -->
@@ -93,19 +103,23 @@
       <div class="container-fluid">
 
         <div class="row">
-          <div class="col-xs-12 text-center text-vertical-center">
-            <h1>About Us</h1>
+          <div class="col-md-6 col-xs-12 text-right">
+            <h2>The Bride</h2>
+            <h3>Megan Cady Scholz</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada. Sed vel lacus ultricies, cursus odio eu, posuere diam. Fusce malesuada, ipsum sed porttitor euismod, sem arcu efficitur ante, vel efficitur neque tellus quis metus. Nulla facilisi. Sed eros elit, mollis a auctor porttitor, fermentum vel neque. Maecenas at tortor pellentesque, bibendum nisl ut, sagittis ipsum. Mauris mattis massa lectus, bibendum condimentum nulla tincidunt ut. Cras vitae scelerisque nisi, ac vulputate nisi. Donec fermentum turpis nec facilisis cursus.
+          </div>
+          <div class="col-md-6 col-xs-12 text-left">
+            <h2>The Groom</h2>
+            <h3>Maurice Addison Hawley IV</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada. Sed vel lacus ultricies, cursus odio eu, posuere diam. Fusce malesuada, ipsum sed porttitor euismod, sem arcu efficitur ante, vel efficitur neque tellus quis metus. Nulla facilisi. Sed eros elit, mollis a auctor porttitor, fermentum vel neque.
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-6 col-xs-12 text-right">
-            <h2>Meg</h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada. Sed vel lacus ultricies, cursus odio eu, posuere diam. Fusce malesuada, ipsum sed porttitor euismod, sem arcu efficitur ante, vel efficitur neque tellus quis metus. Nulla facilisi. Sed eros elit, mollis a auctor porttitor, fermentum vel neque. Maecenas at tortor pellentesque, bibendum nisl ut, sagittis ipsum. Mauris mattis massa lectus, bibendum condimentum nulla tincidunt ut. Cras vitae scelerisque nisi, ac vulputate nisi. Donec fermentum turpis nec facilisis cursus.
-          </div>
-          <div class="col-md-6 col-xs-12 text-left">
-            <h2>Reese</h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada. Sed vel lacus ultricies, cursus odio eu, posuere diam. Fusce malesuada, ipsum sed porttitor euismod, sem arcu efficitur ante, vel efficitur neque tellus quis metus. Nulla facilisi. Sed eros elit, mollis a auctor porttitor, fermentum vel neque.
+          <div class="col-xs-12 text-center">
+            <h2>True Love</h2>
+            <h3>Reese + Meg</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada. Sed vel lacus ultricies, cursus odio eu, posuere diam. Fusce malesuada, ipsum sed porttitor euismod, sem arcu efficitur ante, vel efficitur neque tellus quis metus. Nulla facilisi. Sed eros elit, mollis a auctor porttitor, fermentum vel neque. Maecenas at tortor pellentesque, bibendum nisl ut, sagittis ipsum. Mauris mattis massa lectus, bibendum condimentum nulla tincidunt ut. Cras vitae scelerisque nisi, ac vulputate nisi. Donec fermentum turpis nec facilisis cursus.</p>
           </div>
         </div>
 
@@ -117,45 +131,164 @@
 
 
     <!-- Bridal Party -->
-
-    <div ng-init="friends = [
-      {name:'Vladimir K.', image:'images/vladimir-k.png'},
-      {name:'Sergey S.', image:'images/sergey-s.png'},
-      {name: 'Adrian V.', image: 'images/adrian-v.png'}
-    ]">
-
-
     <section id="bridal-party" class="section">
 
-      <div class="container-fluid">
+      <div class="container-fluid text-center">
 
-        <div class="members">
+        <h1>Bridal Party</h1>
 
-          <div class="member-wrapper" ng-repeat="friend in friends | filter:q as results">
-            <div class="member">
-              <div class="photo-wrapper">
-                <div class="photo">
-                  <img ng-src={{friend.image}} alt="">
-                </div>
-                <div class="overlay">
-                  <span class="fui-eye"></span>
-                </div>
-                <div class="name">{{friend.name}}</div>
-              </div>
+        <h3>Bridesmaids</h3>
+
+        <div class="row">
+
+          <div class="bridesmaid col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="content">
+             <img src="/images/profile-meg-1x.jpg" class="img-responsive img-circle">
+             <h4>Bridesmaid #1</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada.</p>
             </div>
           </div>
 
+          <div class="bridesmaid col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="content">
+             <img src="/images/profile-meg-1x.jpg" class="img-responsive img-circle">
+             <h4>Bridesmaid #2</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada.</p>
+            </div>
+          </div>
+
+          <div class="bridesmaid col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="content">
+             <img src="/images/profile-meg-1x.jpg" class="img-responsive img-circle">
+             <h4>Bridesmaid #3</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada.</p>
+            </div>
+          </div>
+
+          <div class="bridesmaid col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="content">
+             <img src="/images/profile-meg-1x.jpg" class="img-responsive img-circle">
+             <h4>Bridesmaid #4</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada.</p>
+            </div>
+          </div>
+
+          <div class="bridesmaid col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="content">
+             <img src="/images/profile-meg-1x.jpg" class="img-responsive img-circle">
+             <h4>Bridesmaid #5</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada.</p>
+            </div>
+          </div>
+
+          <div class="bridesmaid col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="content">
+             <img src="/images/profile-meg-1x.jpg" class="img-responsive img-circle">
+             <h4>Bridesmaid #6</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada.</p>
+            </div>
+          </div>
+
+        </div>  
+
+        <h3>Groomsmen</h3>
+
+        <div class="row">
+
+          <div class="groomsman col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="content">
+             <img src="/images/profile-reese-1x.jpg" class="img-responsive img-circle">
+             <h4>Groomsman #1</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada.</p>
+            </div>
+          </div>
+         
+          <div class="groomsman col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="content">
+             <img src="/images/profile-reese-1x.jpg" class="img-responsive img-circle">
+             <h4>Groomsman #2</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada.</p>
+            </div>
+          </div>
+          
+          <div class="groomsman col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="content">
+             <img src="/images/profile-reese-1x.jpg" class="img-responsive img-circle">
+             <h4>Groomsman #3</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada.</p>
+            </div>
+          </div>
+
+          <div class="groomsman col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="content">
+             <img src="/images/profile-reese-1x.jpg" class="img-responsive img-circle">
+             <h4>Groomsman #4</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada.</p>
+            </div>
+          </div>
+         
+          <div class="groomsman col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="content">
+             <img src="/images/profile-reese-1x.jpg" class="img-responsive img-circle">
+             <h4>Groomsman #5</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada.</p>
+            </div>
+          </div>
+          
+          <div class="groomsman col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="content">
+             <img src="/images/profile-reese-1x.jpg" class="img-responsive img-circle">
+             <h4>Groomsman #6</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare risus ac nulla fringilla auctor. Morbi eu turpis et orci mollis malesuada.</p>
+            </div>
+          </div>          
+
         </div>
 
-      </div>
+      </div>  
+
     </section>
     <!-- Bridal Party -->
 
 
 
     <!-- Schedule -->
-    <section id="schedule" class="section">
-      
+    <section id="schedule" class="section cover">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h2>Ceremony &amp; Celebration</h2>
+            <h3>what you need to know for our big day</h3>
+            <hr class="line-dot line-dot-gray">
+            <p>The wedding ceremony will be held in the Chapel at the First Baptist Church of Shreveport, LA. The receptions will follow at the Scottish Rite Temple.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-2">
+            <img id="fbc-shreveport-logo" src="/images/fbc_shreveport_logo.png" alt="FBC Shreveport" class="img-responsive">
+          </div>
+        <div class="col-sm-4">
+          <dl id="event-info">
+            <dt>Date</dt>
+            <dd>Saturday June 20<sup>th</sup>, 2015</dd>
+            <dt>Time</dt>
+            <dd>5:00pm</dd>
+            <dt>Ceremony</dt>
+            <dd>First Baptist Church<br><small>543 Ockley Drive, Shreveport, LA 71106</small></dd>
+            <dt>Reception</dt>
+            <dd>Scottish Rite Temple<br><small>725 Cotton Street Shreveport, LA 71101</small></dd>
+            <dt>Attire</dt>
+            <dd>Black Tie Optional*</dd>
+            <dt>Parking</dt>
+            <dd>Free valet service provided at the reception</dd>
+            <dt>Hotel</dt>
+            <dd><a href="http://cwp.marriott.com/shvsb" target="_blank">Courtyard by Marriott In Bossier</a><br><small>Click above for special rates and reservations<br>or call (513) 672-7100</small></dd>
+          </dl>
+        </div>
+      </div>
+
     </section>
     <!-- Schedule -->
 
@@ -163,7 +296,13 @@
 
     <!-- Directions -->
     <section id="directions" class="section">
-      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable="false"></ui-gmap-google-map>
+          </div>
+        </div>
+      </div> 
     </section>
     <!-- Directions -->
 
@@ -250,6 +389,8 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

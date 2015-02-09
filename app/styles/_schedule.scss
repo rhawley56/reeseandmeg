@@ -1,0 +1,23 @@
+#schedule {
+	background: url(/images/fbc-campus.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	color: white;
+	//overflow: hidden;
+
+	//height: 500px;
+
+	.container-fluid {
+
+		@include fill-height();
+		//padding-top: 50px;
+		background-color: transparentize($wedding-blue, 0.1);
+
+
+	}	
+}
+#fbc-shreveport-logo {
+		margin: 15px auto;
+}

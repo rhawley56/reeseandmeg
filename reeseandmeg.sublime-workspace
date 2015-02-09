@@ -59,7 +59,7 @@
 			"file": "app/styles/_mixins.scss",
 			"settings":
 			{
-				"buffer_size": 323,
+				"buffer_size": 615,
 				"line_ending": "Unix"
 			}
 		},
@@ -83,7 +83,7 @@
 			"file": "app/styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 294,
+				"buffer_size": 419,
 				"line_ending": "Unix"
 			}
 		}
@@ -331,7 +331,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 323,
+						"buffer_size": 615,
 						"regions":
 						{
 						},
@@ -994,7 +994,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 294,
+						"buffer_size": 419,
 						"regions":
 						{
 						},
