@@ -1,0 +1,31 @@
+#spacer1 {
+	background: 
+    //linear-gradient(
+    //  transparentize($wedding-green, 0.2), 
+    //  transparentize($wedding-green, 0.2)
+    //),
+    url(/images/reception-photo.jpg) no-repeat center 25%
+  ;
+	
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	
+  color: white;
+
+	height: 500px;
+}
+
+#spacer2 {
+  background: url(/images/wedding-photo.jpg) no-repeat center 35%;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  color: white;
+
+  height: 500px;
+}

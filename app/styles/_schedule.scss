@@ -1,23 +1,23 @@
 #schedule {
-	background: url(/images/fbc-campus.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-	color: white;
-	//overflow: hidden;
-
-	//height: 500px;
 
 	.container-fluid {
 
-		@include fill-height();
-		//padding-top: 50px;
-		background-color: transparentize($wedding-blue, 0.1);
-
+		.icon {
+			margin: 15px auto;
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+			&.camera-icon {
+				background: black url('/images/icon-camera@1x.png') no-repeat center 30%;
+			}
+			&.ring-icon {
+				background: black url('/images/icon-ring-white@1x.png') no-repeat center 50%;
+			}	
+			&.glasses-icon {
+				background: black url('/images/icon-glasses-white@1x.png') no-repeat center 30%;
+			}		
+			
+		}
 
 	}	
-}
-#fbc-shreveport-logo {
-		margin: 15px auto;
 }
