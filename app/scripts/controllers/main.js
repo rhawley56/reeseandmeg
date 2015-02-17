@@ -14,7 +14,6 @@ angular.module('reeseandmegApp')
       'AngularJS',
       'Karma'
     ];
-    $scope.isCollapsed = 1;
 
     uiGmapGoogleMapApi.then(function(maps) {
     	$scope.maps = maps;

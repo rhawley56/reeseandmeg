@@ -9,6 +9,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 //@import "variables.scss";
 @import "mixins.scss";
 
+@import "zindex.scss";
+
 //@import "start-bootstrap.scss";
 
 @import "palette.scss";
@@ -16,6 +18,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "custom.scss";
 
 @import "spacers.scss";
+
+@import "navbar.scss";
+
+@import "header.scss";
 
 @import "about.scss";
 

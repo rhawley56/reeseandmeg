@@ -25,11 +25,33 @@
   transform: translateY(-50%);
 }
 
+@mixin ghostVerticalAlign(){
+  text-align: center;
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; width: .1px;
+  }
+}
+
 @mixin fill-height {
   min-height: 100%;
   height:auto !important; /* cross-browser */
   height: 100%; /* cross-browser */
 }
+
+@function z($list, $element) {
+
+   $z-index: index($list, $element);
+
+   @if $z-index {
+      @return $z-index;
+   }
+
+   @warn 'There is no item "#{$element}" in this list; choose one of: #{$list}';
+   @return null;
+}  
 
 @mixin background-image-retina($file, $type, $width, $height) {
   background-image: url($file + '.' + $type);
@@ -47,4 +69,36 @@
       background-size: $width $height;
     }
   }
+}
+
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
 }

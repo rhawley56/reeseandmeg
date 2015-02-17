@@ -20,71 +20,13 @@ h1, h2, h3, h4, h5, h6  {
 	//font-family: 'Sherina';
 }
 
-nav.transparent {
-  background: rgba(0,0,0,0.8);
-
-  &.navbar-inverse .navbar-nav li a {
-    color: white;
-    &:hover {
-      background-color: black;
-    } 
-  }
-
-
-}
-
-
-
-
-
-.header-unit {
-  height: 600px;
-  border: 2px solid #000;
-  border-right:none;
-  border-left: none;
-  position: relative;
-  padding: 20px;
-  background: none;
-  color: white;
-}
-
-#video-container {
-	position: absolute;
-}
-
-#video-container {
-	top:0%;
-	left:0%;
-	height:100%;
-	width:100%;
-	overflow: hidden;
-}
-
-video {
-	position:absolute;
-	z-index:-1;
-}
-
-video.fill-screen {
-  
-  position: absolute;
-  top: -9999px;
-  bottom: -9999px;
-  left: -9999px;
-  right: -9999px;
-  margin: auto;
-
-  @media (min-width: 1200px) {
-    width: 100%;
-  }
-}
-
 .section {
-	min-height: 500px;
+	//min-height: 500px;
+  background-color: white;
 }
 
 header {
   .container-fluid {
-    @include vertical-align();
+    //@include vertical-align();
   }
 }

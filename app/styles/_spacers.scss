@@ -1,20 +1,33 @@
-#spacer1 {
-	background: 
-    //linear-gradient(
-    //  transparentize($wedding-green, 0.2), 
-    //  transparentize($wedding-green, 0.2)
-    //),
-    url(/images/reception-photo.jpg) no-repeat center 25%
-  ;
-	
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-	
-  color: white;
+#parallax1 {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
 
-	height: 500px;
+  & #parallaxbg {
+    position: absolute;
+    height: 700px;
+    width: 100%;
+  	background: 
+      //linear-gradient(
+      //  transparentize($wedding-green, 0.2), 
+      //  transparentize($wedding-green, 0.2)
+      //),
+      url(/images/reception-photo.jpg) no-repeat center 25%
+    ;
+  	
+    /**-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;**/
+
+    background-size: 100% auto;
+    //top: -100px;
+    //background-position: 0px -100px;
+  }  
+	
+  //color: white;
+
+	//height: 500px;
 }
 
 #spacer2 {

@@ -1,19 +1,47 @@
 #about{
 
+	position: relative;
+
+	&::after//, &::before 
+	{
+		content: ' ';
+		display: block;
+		height: 100px;
+		width: 100%;
+		background: white;
+		
+		position: absolute;
+		left: 0;
+		overflow: hidden;
+		z-index: z($elements, section);
+	}
+
+	&::after {
+		bottom: -40px;
+		@include transform(skewY(3deg));
+	}
+
+	&::before {
+		//top: -40px;
+		//@include transform(skewY(-3deg));
+	}
+
 	h2 {
 		font-family: 'Sherina';
+
+		.bride & {
+			color: $wedding-pink;
+		}
+
+		.groom & {
+			color: $wedding-blue;
+		}
 	}
 
-	.bride h2 {
-		color: $wedding-pink;
-	}
 
-	.groom h2 {
-		color: $wedding-blue;
-	}
 
 	.container-fluid {
-
-
+		position: relative;
+		z-index: z($elements, container-fluid);
 	}
 }

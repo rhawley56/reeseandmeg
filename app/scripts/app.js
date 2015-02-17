@@ -34,6 +34,9 @@ angular
         redirectTo: '/'
       });
   })
+  .config(function ($locationProvider) {
+    $locationProvider.html5Mode(true);
+  })
   .config(function(uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
         //    key: 'your api key',
