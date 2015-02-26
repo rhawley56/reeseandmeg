@@ -12,6 +12,12 @@ angular.module('reeseandmegApp')
 
   		var vm = this;
 
+      vm.awesomeThings = [
+        'HTML5 Boilerplate',
+        'AngularJS',
+        'Karma'
+      ];
+
     	vm.isCollapsed = true;
 
     	vm.collapseToggle = function() {

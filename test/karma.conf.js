@@ -18,6 +18,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'bower_components/jquery/dist/jquery.js',
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/angular-animate/angular-animate.js',
@@ -28,6 +29,10 @@ module.exports = function(config) {
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
       'bower_components/angular-scroll/angular-scroll.js',
+      'bower_components/lodash/dist/lodash.compat.js',
+      'bower_components/angular-google-maps/dist/angular-google-maps.js',
+      'bower_components/gsap/src/uncompressed/TweenMax.js',
+      'bower_components/ScrollMagic/js/jquery.scrollmagic.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js'

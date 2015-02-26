@@ -2,7 +2,7 @@
 
     'use strict';
 
-    $(window).ready(function() {
+    jQuery(window).ready(function() {
 
 
         var windowHeight = getWindowHeight();
