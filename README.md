@@ -1,5 +1,5 @@
-# reeseandmeg
-[![Build Status](https://travis-ci.org/rhawley56/reeseandmeg.svg?branch=master)](https://travis-ci.org/rhawley56/reeseandmeg)
-[![Codeship Status for rhawley56/reeseandmeg](https://codeship.com/projects/257d35a0-9f99-0132-ec49-02db7f3f2d41/status?branch=master)](https://codeship.com/projects/65213)
+# [ReeseandMeg.com](http://www.reeseandmeg.com)
+[![Build Status](https://img.shields.io/travis/rhawley56/reeseandmeg/master.svg?style=flat)](https://travis-ci.org/rhawley56/reeseandmeg)
+[![devDependency Status](https://img.shields.io/david/dev/rhawley56/reeseandmeg.svg?style=flat)](https://david-dm.org/rhawley56/reeseandmeg#info=devDependencies)
 
-ReeseandMeg.com Wedding Website
+Check it out at at <http://reeseandmeg.com>
