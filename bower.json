@@ -12,7 +12,7 @@
     "angular-route": "^1.3.0",
     "angular-sanitize": "^1.3.0",
     "angular-touch": "^1.3.0",
-    "angular-bootstrap": "~0.12.0",
+    "angular-bootstrap": "~0.12.1",
     "font-awesome": "~4.2.0",
     "angular-scroll": "~0.6.4",
     "compass-mixins": "~1.0.2",
@@ -34,5 +34,8 @@
       ]
     }
   },
-  "appPath": "app"
+  "appPath": "app",
+  "resolutions": {
+    "angular": ">=1.2.0"
+  }
 }
