@@ -108,10 +108,12 @@
 
 #video-bg {
   
-  position: absolute;
+  position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   overflow: hidden;
   //@include ghostVerticalAlign();
+
+  z-index: -1;
   
   & > video {
     position: absolute;

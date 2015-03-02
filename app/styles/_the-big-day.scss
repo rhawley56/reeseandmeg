@@ -1,0 +1,47 @@
+/*========================*/
+/* 04. THE DAY		  	  */
+/*========================*/
+
+/* 04-1 Location, Date, Accomodation */
+/* ----------------------- */
+.box{
+	background-color:#ffffff;
+	margin-top:20px;
+}
+
+.box_icon{
+	background-color:#00c0b6; 
+	margin-top:-1px; 
+	padding:18px; 
+	height:60px; 
+	width:60px; 
+	color:#ffffff; 
+	font-size:26px
+}
+
+.box_title{
+	padding-left:20px; 
+	font-weight:bold; 
+	font-family: 'Montserrat', sans-serif; 
+	font-size:18px; 
+	color:#444444
+}
+
+.box_text{
+	padding:20px 25px;
+}
+
+/* 04-2 Location Map */
+/* ----------------------- */
+#location_map {
+	width:100%;
+	height:450px;
+	margin-top:30px;
+}
+
+
+.angular-google-map-container { 
+	width: 100%;
+	height: 400px;
+	margin-top: 30px;
+}

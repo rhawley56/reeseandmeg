@@ -1,0 +1,42 @@
+/*========================*/
+/* 03. COUPLE        	  */
+/*========================*/
+
+/* 03-1 His/Her Profile */
+/* ----------------------- */
+
+#couple {
+
+	padding-bottom: 100px;
+
+	.profile{
+		background-color:#fff; 
+		padding:25px 20px
+	}
+
+	.subname {
+		font-family: 'Montserrat', sans-serif; 
+		font-size:22px; 
+		line-height:20px; 
+		color:#8b8a8a
+	}
+
+	.profile_text{
+		margin-top:10px;
+	}
+
+	/* 03-2 Popup Content */
+	/* ----------------------- */
+	.popup_content{
+		width:60%; 
+		margin:30px auto; 
+		background-color:#FFF; 
+		height:100%;
+		padding:30px
+	}
+
+	.popup_content img{
+		width:100%;
+		margin:20px 0 20px 0
+	}
+}

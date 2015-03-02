@@ -9,24 +9,22 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 //@import "variables.scss";
 @import "mixins.scss";
 
-@import "zindex.scss";
-
-//@import "start-bootstrap.scss";
-
 @import "palette.scss";
 
 @import "custom.scss";
 
-@import "spacers.scss";
+@import "parallax";
 
 @import "navbar.scss";
 
 @import "header.scss";
 
-@import "about.scss";
+@import "couple";
 
-@import "bridal-party.scss";
+@import "the-big-day";
 
-@import "schedule.scss";
+@import "wedding-party.scss";
 
-@import "directions.scss";
+@import "registry";
+
+@import "footer";

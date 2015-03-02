@@ -4,59 +4,74 @@
 
     jQuery(window).ready(function() {
 
+        var windowHeight, topperHeight, navHeight;
 
-        var windowHeight = getWindowHeight();
-        var topperHeight = getTopperHeight();
+
+        windowHeight = getWindowHeight();
+        topperHeight = getTopperHeight();
+        navHeight = getNavHeight();
 
         
-        function getWindowHeight() {
-            return $(window).height();
-        }
-
-        function getTopperHeight() {
-            return (getWindowHeight());
-        }
-
-        function fillTopper() {
-            $('#top').height(getTopperHeight());
-        }
-        
-
         // update window height on resize
-        $(window).on("resize", function () {
-            windowHeight = getWindowHeight();
-            topperHeight = getTopperHeight();
+        jQuery(window).on("resize", function () {
 
             fillTopper();
 
-            console.log(windowHeight);
+            //console.log(windowHeight);
         });                         
 
         // init controller
         var controller = new ScrollMagic();
 
         // assign handler "scene" and add it to controller
-        new ScrollScene({triggerElement: "#about", triggerHook: 0.1})
+        /**new ScrollScene({triggerElement: "#about", triggerHook: 0.1})
                                 .setClassToggle(".navbar", "top-nav-collapse")
-                                .addTo(controller);
+                                .addTo(controller);**/
 
+        new ScrollScene({triggerElement: "#nav", triggerHook: '0'})
+                        .setPin("#nav")
+                        //.setClassToggle(".navbar", "")
+                        .setClassToggle(".navbar", "top-nav-collapse navbar-fixed-top")
+                        .addTo(controller);
+                        //.addIndicators({zindex: 10, suffix: "1"});
 
+        var controller1 = new ScrollMagic();
 
-        /**var controller1 = new ScrollMagic();
-
-        new ScrollScene({
-            triggerElement: "#parallax1", // point of execution
-            duration: $(window).height()+500, // pin element for the window height - 1
-            triggerHook: 1, // don't trigger until #pinned-trigger1 hits the top of the viewport
-            reverse: true // allows the effect to trigger when scrolled in the reverse direction
-        })
+        new ScrollScene({triggerElement: ".parallax-bg-1", duration: $(window).height() + $('.parallax').height(), offset: 0})
         .triggerHook("onEnter")
-        .setTween(TweenMax.fromTo("#parallax1 #parallaxbg", 1, {top: "-100px", ease: Linear.easeNone},{top: "20px", ease: Linear.easeNone}))
-        .addTo(controller1);
-        //.addIndicators({zindex: 1, suffix: "1"});**/
+        .setTween(TweenMax.fromTo(".parallax-bg-1", 1, {'background-position-y': "-400px", ease: Linear.easeNone},{'background-position-y': "-200px", ease: Linear.easeNone}))
+        //.setTween(TweenMax.to("#parallax-bg-1", 1, {'background-position': "0 200px", ease: Linear.easeNone}))
+        .addTo(controller1)
+        .addIndicators({zindex: 1, suffix: "Parallax1"});
+
+        var controller2 = new ScrollMagic();
+
+        new ScrollScene({triggerElement: ".parallax-bg-2", duration: $(window).height() + $('.parallax').height(), offset: 0})
+        .triggerHook("onEnter")
+        .setTween(TweenMax.fromTo(".parallax-bg-2", 1, {'background-position-y': "-400px", ease: Linear.easeNone},{'background-position-y': "-200px", ease: Linear.easeNone}))
+        //.setTween(TweenMax.fromTo(".parallax-bg-2", 1, {'background-position': "0 85%", ease: Linear.easeNone},{'background-position': "0 25%", ease: Linear.easeNone}))
+        //.setTween(TweenMax.to("#parallax-bg-1", 1, {'background-position': "0 200px", ease: Linear.easeNone}))
+        .addTo(controller2)
+        .addIndicators({zindex: 1, suffix: "Parallax2"});
 
 
         fillTopper();            
     }); 
+
+    function getWindowHeight() {
+        return jQuery(window).height();
+    }
+
+    function getNavHeight() {
+        return jQuery('#nav').outerHeight();
+    }
+
+    function getTopperHeight() {
+        return (getWindowHeight() - getNavHeight());
+    }
+
+    function fillTopper() {
+        jQuery('#top').height(getTopperHeight());
+    }
 
 }());  

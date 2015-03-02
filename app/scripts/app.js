@@ -39,8 +39,8 @@ angular
   })
   .config(function(uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
-        //    key: 'your api key',
+        key: 'AIzaSyBIkSZ8FHVZUTysMFS13rlLsm3WAyTc2gs',
         v: '3.17',
-        libraries: 'weather,geometry,visualization'
+        libraries: 'places'
     });
   });

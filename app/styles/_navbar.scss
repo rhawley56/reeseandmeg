@@ -1,9 +1,10 @@
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    //border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     //font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    //background-color: #000;
+    background-color: rgb(3, 201, 169);
 }
 
 .navbar-custom .navbar-brand {
@@ -29,9 +30,15 @@
     color: #fff;
 }
 
+.navbar-collapse {
+    padding: 0;
+}
+
 .navbar-custom .nav li.active {
-    outline: nonte;
-    background-color: rgba(255,255,255,.3);
+    outline: 0;
+    color: #000;
+    background-color: inherit;
+    //background-color: rgba(255,255,255,.3);
 }
 
 .navbar-custom .nav li a {
@@ -42,17 +49,32 @@
 
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
-.navbar-custom .nav li a.active {
+.navbar-custom .nav li.active a {
     outline: 0;
-    background-color: rgba(255,255,255,.3);
+    color: #000;
+    background-color: inherit;
+    //background-color: rgba(255,255,255,.3);
+}
+
+.navbar-brand-container {
+    position: fixed;
+    top: 0;
+    left: 15%;
+
+    .navbar-brand {
+        padding: 15px 10px;
+        background-color: #000;
+    }
+
 }
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
-        border-bottom: 0;
+        //padding: 15px 0;
+        border: 0;
+        border-radius: 0;
         letter-spacing: 1px;
-        background: 0 0;
+        //background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -60,10 +82,12 @@
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        //background-color: #000;
+        background-color: rgb(3, 201, 169);
+        //background-color: '#03C9A9';
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        //border-bottom: 1px solid rgba(255,255,255,.3);
     }
 }

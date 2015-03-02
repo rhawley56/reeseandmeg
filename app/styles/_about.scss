@@ -1,6 +1,9 @@
 #about{
 
 	position: relative;
+	background-color: #e8e8e8;
+
+	/**
 
 	&::after//, &::before 
 	{
@@ -13,7 +16,6 @@
 		position: absolute;
 		left: 0;
 		overflow: hidden;
-		z-index: z($elements, section);
 	}
 
 	&::after {
@@ -36,12 +38,12 @@
 		.groom & {
 			color: $wedding-blue;
 		}
-	}
+	}**/
 
 
 
 	.container-fluid {
 		position: relative;
-		z-index: z($elements, container-fluid);
+
 	}
 }
