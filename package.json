@@ -45,7 +45,6 @@
   },
   "scripts": {
     "test": "grunt test",
-    "start": "static -p $PORT dist",
-    "postinstall": "bower install && grunt build"
+    "start": "static -p $PORT dist"
   }
 }
