@@ -46,6 +46,6 @@
   "scripts": {
     "test": "grunt test",
     "start": "static -p $PORT dist",
-    "postinstall": "gem install sass compass && bower install && grunt build"
+    "postinstall": "bower install && grunt build"
   }
 }
