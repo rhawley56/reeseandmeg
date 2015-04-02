@@ -4,11 +4,12 @@
 
     jQuery(window).ready(function() {
 
-        var windowHeight, topperHeight, navHeight;
+        var windowHeight, topperHeight, navHeight, vid;
 
         windowHeight = getWindowHeight();
         topperHeight = getTopperHeight();
         navHeight = getNavHeight();
+        vid = jQuery("#video-bg video").get(0);
 
         // update window height on resize
         jQuery(window).on("resize", function () {
@@ -22,7 +23,7 @@
         new ScrollScene({triggerElement: "#nav", triggerHook: '0'})
                         .on("enter leave", function (e) {
                             //$("#state").text(e.type == "enter" ? "inside" : "outside");
-                            var vid = jQuery("#video-bg video").get(0); 
+                            //var vid = jQuery("#video-bg video").get(0); 
                             if(e.type=="enter"){
                                 vid.pause();
                                 jQuery("#video-bg").hide(); 
@@ -58,7 +59,10 @@
         .triggerHook("onEnter")
         .setTween(TweenMax.fromTo(".parallax-bg-2", 1, {'background-position': "50% -30vh", ease: Linear.easeNone},{'background-position': "50% 10vh", ease: Linear.easeNone}))
         .addTo(controller3);
-        //.addIndicators({zindex: 1, suffix: "Parallax2"});           
+        //.addIndicators({zindex: 1, suffix: "Parallax2"});
+
+
+        vid.play();      
     }); 
 
     function getWindowHeight() {

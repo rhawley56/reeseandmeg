@@ -17,16 +17,12 @@
     <!-- endbuild -->
   </head>
 
-  <body ng-app="reeseandmegApp" ng-controller="MainCtrl as main">
+  <body ng-app="reeseandmegApp" ng-controller="MainCtrl as main" class="ng-scope" style="display: block;">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-
-
-
-  
 
     <!-- Header -->
     <header id="top" class="header header-unit">
@@ -59,7 +55,7 @@
     <!-- Header -->
 
     <!-- Navigation -->
-    <nav id="nav" ng-controller="NavCtrl as nav" class="navbar navbar-custom top-nav-collapse top-nav-fixed">
+    <nav id="nav" ng-controller="NavCtrl as nav" bs-affix="" data-offset-top="200" class="navbar navbar-custom top-nav-fixed ng-scope">
         
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -68,30 +64,33 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <div class="navbar-brand-container text-center">
-                  <a class="navbar-brand text-center" href="#top" du-smooth-scroll>R+M</a>
+                  <a class="navbar-brand text-center" href="#top" du-smooth-scroll="">R+M</a>
                 </div>  
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="navbar-collapse navbar-inner" id="bs-example-navbar-collapse-1" collapse="nav.isCollapsed">
+            <div class="navbar-collapse navbar-inner collapse" id="bs-example-navbar-collapse-1" collapse="nav.isCollapsed" style="height: 0px;">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#top" du-smooth-scroll du-scrollspy></a>
+                        <a href="#top" du-smooth-scroll="" du-scrollspy="" class=""></a>
                     </li>
                     <li du-scrollspy="couple" class="page-scroll">
-                        <a href="#couple" du-smooth-scroll >COUPLE</a>
+                        <a href="#couple" du-smooth-scroll="">THE COUPLE</a>
                     </li>
                     <li du-scrollspy="thebigday" class="page-scroll">
-                        <a href="#thebigday" du-smooth-scroll>THE BIG DAY</a>
+                        <a href="#thebigday" du-smooth-scroll="">THE BIG DAY</a>
                     </li>
-                    <li du-scrollspy="bridesmaids" class="page-scroll">
+                    <!--<li du-scrollspy="bridesmaids" class="page-scroll">
                         <a href="#bridesmaids" du-smooth-scroll>BRIDESMAIDS</a>
-                    </li>
-                    <li du-scrollspy="groomsmen" class="page-scroll">
+                    </li>-->
+                    <!--<li du-scrollspy="groomsmen" class="page-scroll">
                         <a href="#groomsmen" du-smooth-scroll>GROOMSMEN</a>
+                    </li>-->
+                    <li du-scrollspy="accommodations" class="page-scroll">
+                        <a href="#accommodations" du-smooth-scroll="">ACCOMMODATIONS</a>
                     </li>
-                    <li du-scrollspy="registry" class="page-scroll">
-                        <a href="#registry" du-smooth-scroll>Registry</a>
+                    <li du-scrollspy="registry" class="page-scroll active">
+                        <a href="#registry" du-smooth-scroll="">Registry</a>
                     </li>
                 </ul>
             </div>
@@ -101,223 +100,272 @@
     </nav>
 
     <section id="couple">
-      <div class="container">
-          
-          <!-- TITLE -->
-          <div class="row">
-            <div id="wedding_title" class="col-md-12 text-center the_title animation fadeInUp animated" style="visibility: visible;">
-                <h2 class="margin0 padding0">FIRST COMES LOVE</h2>
-                  <span class="margin0 padding0 sub_title">NOW COMES MARRIAGE!</span>
-              </div>
-              <div class="col-md-offset-1"></div>
-              <div id="wedding_intro" class="col-md-10 col-md-offset-1 text-center animation delay1 fadeInUp animated" style="visibility: visible;">
-                  <span class="glyphicon glyphicon-heart intro_heart"></span>
-                  <span class="intro">Come celebrate with us as we tie the knot, as we stand together with sweaty hands &amp; open hearts extending our friendship to include the vows of marriage. Festivities will begin with dinner, dancing, and happily-ever-afters to follow.</span>
-              </div>
-          </div><!-- END TITLE -->
-            
-          <div class="row">
-            
-            <!-- HIS PROFILE -->
-            <div id="his_profile" class="col-md-6 animation delay1 fadeInLeft animated" style="visibility: visible;">                     
-                <div class="photo_item">
-                    <div class="photo_item_preview">
-                        <a href="#">
-                            <img src="images/reese@2x.png" alt="">
-                          </a>
-                        <div class="photo_item_overlay">
-                          <a class="popup" href="him.html">
-                                <span class="icon_background"></span>
-                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
-                              </a>
-                        </div>
-                      </div>
-                  </div>
-                  
-                  <div class="profile">
-                    <div class="row">
-                        <div class="col-md-10 col-sm-10 col-xs-10">
-                            <h3 class="margin0 padding0">REESE</h3>
-                              <span class="margin0 padding0 subname">HAWLEY</span>
-                          </div>
-                          <div id="male_icon" class="col-md-2 col-sm-2 col-xs-2">
-                            <img src="images/male_icon.png" alt="">
-                          </div>
-                      </div>
-                      <div class="row profile_text">
-                        <div class="col-md-12">
-                            <p>Reese was born and raised in Shreveport, Louisiana attending C.E Byrd Highschool (A Blue Ribbon School of Excellence). Afterwards he attended Louisiana Tech University in Ruston, Louisiana and graduated with a degree in Biomedical Engineering.</p>
-                          </div>
-                      </div>
-                  </div>                        
-              </div> <!-- END OF HIS PROFILE -->
-                
-              <!-- HER PROFILE -->
-              <div id="her_profile" class="col-md-6 animation delay1 fadeInRight animated" style="visibility: visible;">                      
-                  <div class="photo_item">
-                      <div class="photo_item_preview">
-                          <a href="#">
-                              <img src="images/meg@2x.png" alt="">
-                            </a>
-                          <div class="photo_item_overlay">
-                            <a class="popup" href="her.html">
-                                  <span class="icon_background"></span>
-                                  <span class="glyphicon glyphicon-zoom-in icon_button"></span>
-                                </a>
-                          </div>
-                        </div>
-                    </div>
-                    
-                    <div class="profile">
-                      <div class="row">
-                          <div class="col-md-10 col-sm-10 col-xs-10">
-                              <h3 class="margin0 padding0">MEG</h3>
-                                <span class="margin0 padding0 subname">SCHOLZ</span>
-                            </div>
-                            <div id="female_icon" class="col-md-2 col-sm-2 col-xs-2">
-                              <img src="images/female_icon.png" alt="">
-                            </div>
-                        </div>
-                        <div class="row profile_text">
-                          <div class="col-md-12">
-                              <p>Meg is from a little bit of everywhere but is lucky enough to call San Antonio, TX her hometown. Meg spent her childhood teaching (read- bossing) around stuffed animals and baby dolls and now is lucky enough to teach (and a little bit of bossing) real children as an 8th grade English teacher. She attended Texas A&M University, graduating in 2011 with her degree in Middle School Education. While at A&M she discovered her love of photography, service, and college football.<p>
-                              <p>Meg’s loves are blogging (Read her blog here!), anything covered in glitter and TV shows that make her cry or whose target audience are teenagers half her age.</p>
-                            </div>
-                        </div>
-                    </div>                        
-                </div>                                        
-            </div><!-- END OF HER PROFILE --> 
 
-        </div>       
+      <div class="container-fluid">
+          
+        <!-- TITLE -->
+        <div class="row section-intro">
+
+          <div class="col-md-12 text-center title">
+            <h2>First Comes Love!</h2>
+            <span class="sub-title">The Couple</span>
+          </div>
+
+          <div class="col-md-10 col-md-offset-1 text-center description">
+              <span class="glyphicon glyphicon-heart intro-heart"></span>
+              <span class="intro-desc">Come celebrate with us as we tie the knot.<br>Festivities will begin with dinner, dancing, and happily-ever-afters to follow! #HappyHawleyDay</span>
+          </div>
+
+        </div>
+        <!-- END TITLE -->
+
+        <!-- BRIDE -->
+        <div class="row vertical-align">
+
+          <div class="col-xs-12 col-sm-4 col-sm-push-8">
+            <div class="profile-image">
+              <span id="meg-profile-img" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+          </div>
+          
+          <div class="col-xs-12 col-sm-8 col-sm-pull-4">
+            <div class="profile-desc">
+            <h3 class="text-right">THE BRIDE</h3>
+              <h2 class="text-right">Megan Cady Scholz</h2>
+              <p class="text-right">Meg is from a little bit of everywhere but is lucky enough to call San Antonio, TX her hometown. Meg spent her childhood teaching (read- bossing) around stuffed animals and baby dolls and now is lucky enough to teach (and a little bit of bossing) real children as an 8th grade English teacher. She attended Texas A&amp;M University, graduating in 2011 with her degree in Middle School Education. While at A&amp;M she discovered her love of photography, service, and college football.</p><p>
+              </p><p class="text-right">Meg’s loves are blogging (Read her blog <a href="http://www.megcady.com" target="_blank">here</a>!), anything covered in glitter and TV shows that make her cry or whose target audience are teenagers half her age.</p>
+              <p class="">
+            </div>
+          </div>
+
+        </div><!-- END BRIDE -->
+        
+        <!-- GROOM -->
+        <div class="row vertical-align">
+
+          <div class="col-xs-12 col-sm-4">
+            <div class="profile-image">
+              <span id="reese-profile-img" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <div class="profile-desc">
+              <h3 class="text-left">THE GROOM</h3>
+              <h2>Maurice Addison Hawley IV</h2>
+              <p>Reese was born and raised in Shreveport, Louisiana attending C.E Byrd Highschool (A Blue Ribbon School of Excellence). Afterwards he attended Louisiana Tech University in Ruston, Louisiana and graduated with a degree in Biomedical Engineering.</p>
+            </div>
+          </div>
+
+        </div><!-- END GROOM -->
+
+      </div>       
     </section>
 
     <section class="parallax">
       <div class="parallax-bg parallax-bg-1"></div>
     </section>
 
-    <!--THE DAY SECTION START-->
+    <!-- THE BIG DAY-->
     <section id="thebigday">
-      <div class="container">
-          <!-- TITLE -->
-          <div class="row">
-              <div id="where_when_title" class="col-md-12 text-center the_title animation fadeInUp">
-                  <h2 class="margin0 padding0">WHERE AND WHEN</h2>
-                    <span class="margin0 padding0 sub_title">OF THE MARRIAGE</span>
-                </div>
-                <div class="col-md-offset-1"></div>
-                <div id="where_when_intro" class="col-md-10 col-md-offset-1 text-center animation delay1 fadeInUp">
-                    <span class="glyphicon glyphicon-heart intro_heart"></span>
-                    <span class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus, leo at pretium commodo, dui ipsum tristique dolor, in ullamcorper tellus velit quis nisl. In placerat volutpat elit quis dictum. Ut id sem nec mauris lacinia rhoncus.</span>
-                </div>
-            </div><!-- END TITLE -->
-            
-            <!-- LOCATION, DATE&TIME, ACCOMODATION-->
-            <div class="row">
-              <div class="col-md-4">
-                  <div id="location" class="box animation fadeInLeft">
-                      <div>
-                        <span class="glyphicon glyphicon-map-marker box_icon"></span>
-                      <span class="box_title">DATE & LOCATION</span>
-                        </div>
-                        <div class="box_text">
-                          <p>It will be held on <strong> Saturday October 30,2010</strong> at <strong>Manalia Tower, Anfix Street ST01</strong>. Check the map to get the direction.</p>
-                        </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div id="date_time" class="box animation delay1 fadeInUp">
-                      <div>
-                        <span class="glyphicon glyphicon-time box_icon"></span>
-                      <span class="box_title">TIME</span>
-                        </div>
-                        <div class="box_text">
-                          <p>It will start at <strong> Five O'Clock in the evenings</strong>. Dinner + dancing to follow. Costumes & creative attire highly encouraged. </p>
-                        </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div id="accomodation" class="box animation delay2 fadeInRight">
-                      <div>
-                        <span class="glyphicon glyphicon-home box_icon"></span>
-                      <span class="box_title">ACCOMODATION</span>
-                        </div>
-                        <div class="box_text">
-                          <p>We have arranged accommodations at a nearby <strong>Comfort Inn</strong> for guests who are making a bit of a trip.</p>
-                        </div>
-                  </div>
-                </div>
-            </div><!-- END OF LOCATION -->
-            
-            <!-- MAP -->
-            <div class="row">
-              <div class="col-md-12">
-                <ui-gmap-google-map id="location_map" center="main.map.center" zoom="main.map.zoom" options="main.map.options">
 
-                  <ui-gmap-marker coords="main.marker.coords" idkey="main.marker.id">
-                  
-
-
-                  </ui-gmap-marker>
-
-                </ui-gmap-google-map>
-              </div>
-            </div><!-- END OF MAP-->
-            
-        </div>
-    </section><!--END of THE DAY SECTION-->
-
-    <!-- Schedule -->
-    <section ng-show="!main.hide" id="schedule" class="section cover">
       <div class="container-fluid">
+        
+        <!-- TITLE -->
+        <div class="row section-intro">
 
+          <div class="col-md-12 text-center title">
+            <h2>Now Comes Marriage!</h2>
+            <span class="sub-title">The Big Day</span>
+          </div>
+
+          <div class="col-md-10 col-md-offset-1 text-center description">
+            <span class="glyphicon glyphicon-heart intro-heart"></span>
+            <span class="intro-desc">The wedding ceremony will be held in the Chapel at the First Baptist Church of Shreveport, LA. The receptions will follow at the Scottish Rite Temple.</span>
+          </div>
+          
+        </div><!-- END TITLE -->
+
+        <!-- LOCATION, DATE&TIME, ACCOMODATION-->
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 text-center">
-            <h2>Ceremony &amp; Celebration</h2>
-            <h3>what you need to know for our big day</h3>
-            <hr class="line-dot line-dot-gray">
-            <p>The wedding ceremony will be held in the Chapel at the First Baptist Church of Shreveport, LA. The receptions will follow at the Scottish Rite Temple.</p>
-          </div>
-        </div>
 
-        <div class="row text-center">
           <div class="col-xs-12 col-md-4">
-            <div class="icon camera-icon"></div>
-            <h3>Family Photos</h3>
-            <p>4:00 pm<br/><strong>First Baptist Church</strong></p>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="icon ring-icon"></div>
-            <h3>Ceremony</h3>
-            <p>5:30 pm<br/><strong>First Baptist Church</strong></p>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="icon glasses-icon"></div>
-            <h3>Reception</h3>
-            <p>6:00 pm<br/><strong>Scottish Rite</strong></p>
-          </div>
-        </div>
 
-        <div class="row text-center">
-          <div class="col-xs-8 col-xs-offset-2">
-            <h3>Accommodations</h3>
-            <p>The Fairfield Marriott Bossier City and El Dorado Casino will be offering a special discounted rate for our wedding guests. Please reference the Scholz/Hawley Wedding when booking your room.</p>
+            <div class="row">
+            
+              <div class="col-xs-12">
+                <div class="ceremony">
+                  <h3>Ceremony</h3>
+                  <i class="new-year-proposals-wedding15"></i>
+                  <span class="event-time">5:30</span><br>
+                </div>
+              </div>
+
+              <div class="hidden-xs col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2">
+                <div id="curly-brace">
+                  <div id="left" class="brace"></div>
+                  <div id="right" class="brace"></div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 text-center">
+                <address>
+                  <strong>First Baptist Church Shreveport</strong><br>
+                  Frost Chapel<br>
+                  543 Ockley Drive<br>
+                  Shreveport, LA 71106<br>
+                  <abbr title="Phone">P:</abbr> (318) 865-8414
+                </address>
+              </div>
+
+            </div>
+
           </div>
-        </div> 
+
+          <div class="col-xs-12 col-md-8">
+
+            <div class="row">
+
+              <div class="col-xs-12 col-sm-6">
+                <div class="reception">
+                  <h3>Reception</h3>
+                  <i class="celebrations-musical7"></i>
+                  <span class="event-time">6:00</span><br>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <div class="send-off">
+                  <h3>Send Off</h3>
+                  <i class="new-year-proposals-toast1"></i>
+                  <span class="event-time">10:30</span>
+                </div>
+              </div>
+
+              <div class="hidden-xs col-sm-12">
+
+                <div id="curly-brace">
+                  <div id="left" class="brace"></div>
+                  <div id="right" class="brace"></div>
+                </div>
+
+              </div>
+              
+              <div class="col-xs-12 text-center"> 
+
+                <strong>Shreveport Scottish Rite</strong><br>
+                Ballroom<br>
+                725 Cotton Street<br>
+                Shreveport, LA 71101<br>
+                <abbr title="Phone">P:</abbr> (318) 221-9713
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
 
     </section>
-    <!-- Schedule -->
+
+    <!--<section id="directions" class="cover">
+
+        <!-- MAP --
+        <div class="row">
+          <div class="col-md-12">
+            <ui-gmap-google-map id="location_map" center="main.map.center" zoom="main.map.zoom" options="main.map.options">
+
+              <ui-gmap-marker coords="main.marker.coords" idkey="main.marker.id"></ui-gmap-marker>
+
+            </ui-gmap-google-map>
+          </div>
+        </div><!-- END OF MAP--
+
+    </section>-->
+
+    <section id="accommodations">
+
+      <div class="container-fluid">
+
+        <!-- TITLE -->
+        <div class="row section-intro">
+
+          <div class="col-md-12 text-center title">
+            <h2>Friends and Family</h2>
+            <span class="sub-title">Accommodations</span>
+          </div>
+
+          <div class="col-md-10 col-md-offset-1 text-center description">
+            <span class="glyphicon glyphicon-heart intro-heart"></span>
+            <span class="intro-desc">The Courtyard Marriott Louisiana Boardwalk will be offering a special discounted rate for our wedding guests. Please reference the Scholz/Hawley Wedding when booking your room.</span>
+          </div>
+          
+        </div><!-- END TITLE -->
+
+        <div class="row vertical-align">
+
+           <div class="col-xs-12 col-sm-4">
+
+            <div class="hotel fairfield text-center">
+              <h2>Hilton Shreveport</h2>
+              <address>
+                104 MARKET STREET<br>
+                SHREVEPORT, LOUISIANA, 71101<br>
+                <abbr title="Phone">P:</abbr> (318) 698-0900
+              </address>
+              <a class="ghost-button-full-color" href="http://www3.hilton.com/en/hotels/louisiana/hilton-shreveport-SHVSPHF/index.html" target="_blank">MORE INFO</a>
+            </div>
+
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+
+            <div class="hotel fairfield text-center">
+              <h2>Courtyard Marriott Louisiana Boardwalk</h2>
+              <address>
+                100 Boardwalk Boulevard<br>
+                Bossier City  Louisiana  71111<br>
+                <abbr title="Phone">P:</abbr> (318) 742-8300
+              </address>
+              <a class="ghost-button-full-color" href="http://www.marriott.com/hotels/travel/shvsb-courtyard-shreveport-bossier-city-louisiana-boardwalk/" target="_blank">MORE INFO</a>
+            </div>
+
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+
+            <div class="hotel eldorado text-center">
+              <h2>Eldorado Resort Casino Shreveport</h2>
+              <address>
+                451 Clyde Fant Parkway<br>
+                Shreveport, LA 71101<br>
+                <abbr title="Phone">P:</abbr> +1-877-613-0711
+              </address>
+              <a class="ghost-button-full-color" href="http://www.eldoradoshreveport.com" target="_blank">MORE INFO</a>
+            </div>
+
+          </div>
+
+        </div><!-- END OF LOCATION -->
+            
+      </div>
+    </section><!--END THE BIG DAY SECTION-->
 
     <section class="parallax">
       <div class="parallax-bg parallax-bg-2"></div>
     </section>
 
-    
+    <!--<section id="bridesmaids">
 
-    <section id="bridesmaids">
       <div class="container">
-        <!-- TITLE -->
+
         <div class="row">
             <div id="bridesmaid_title" class="col-md-12 text-center the_title animation fadeInUp animated" style="visibility: visible;">
                 <h2 class="margin0 padding0">BRIDESMAID</h2>
@@ -328,9 +376,49 @@
                   <span class="glyphicon glyphicon-heart intro_heart"></span>
                   <span class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus, leo at pretium commodo, dui ipsum tristique dolor, in ullamcorper tellus velit quis nisl. In placerat volutpat elit quis dictum. Ut id sem nec mauris lacinia rhoncus.</span>
               </div>
-          </div><!-- END TITLE -->
+          </div>
+
+          <div class="Grid">
+
+            <div class="Grid-cell Grid-cell-img">
+              <span id="bridesmaid-img-1" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+
+            <div class="Grid-cell Grid-cell-img">
+              <span id="bridesmaid-img-1" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+
+            <div class="Grid-cell Grid-cell-img">
+              <span id="bridesmaid-img-1" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+
+            <div class="Grid-cell Grid-cell-img">
+              <span id="bridesmaid-img-1" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+
+            <div class="Grid-cell Grid-cell-img">
+              <span id="bridesmaid-img-1" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+
+            <div class="Grid-cell Grid-cell-img">
+              <span id="bridesmaid-img-1" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+
+          </div>
           
-          <!-- BRIDESMAID ROW -->
+          <!-- BRIDESMAID ROW
           <div class="row">
             <div class="col-md-4 col-sm-6 photo_col animation fadeIn animated" style="visibility: visible;">
                 <div class="photo_item">
@@ -453,33 +541,46 @@
               </div>
           
           </div><!-- END BRIDESMAID ROW-->
-        </div>
-      </section>
+        
+      
 
       <!-- RSVP -->
       <!-- RSVP -->
 
      <!--REGISTRY SECTION START-->
       <section id="registry">
-        <div class="container">
+
+        <div class="container-fluid">
           <!-- TITLE -->
-          <div class="row">
-            <div id="registry_title" class="col-md-12 text-center the_title animation fadeInUp">
-              <h2 class="margin0 padding0">GIFT REGISTRY</h2>
-              <span class="margin0 padding0 sub_title">THANK YOU</span>
+          <div class="row section-intro">
+
+            <div class="col-md-12 text-center title">
+              <h2>Wish List</h2>
+              <span class="sub-title">Registry</span>
             </div>
-            <div class="col-md-offset-1"></div>
-            <div id="registry_intro" class="col-md-10 col-md-offset-1 text-center animation delay1 fadeInUp">
-              <span class="glyphicon glyphicon-heart intro_heart"></span>
-              <span class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus, leo at pretium commodo, dui ipsum tristique dolor, in ullamcorper tellus velit quis nisl. In placerat volutpat elit quis dictum. Ut id sem nec mauris lacinia rhoncus.</span>
+
+            <div class="col-md-10 col-md-offset-1 text-center description">
+              <span class="glyphicon glyphicon-heart intro-heart"></span>
+              <span class="intro-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus, leo at pretium commodo, dui ipsum tristique dolor, in ullamcorper tellus velit quis nisl. In placerat volutpat elit quis dictum. Ut id sem nec mauris lacinia rhoncus.</span>
             </div>
-          </div><!-- END TITLE --> 
+            
+          </div><!-- END TITLE -->
 
           <!-- LOGO SLIDE -->
-          <div class="row">
-            <div class="item col-sm-12 col-md-4 text-center"> <a href="#"> <img src="images/macys.png" class="img-responsive center-block" alt=""> </a> </div>
-            <div class="item col-sm-12 col-md-4 text-center"> <a href="#"> <img src="images/bedbathbeyond.png" class="img-responsive center-block" alt=""> </a> </div>
-            <div class="item col-sm-12 col-md-4 text-center"> <a href="#"> <img src="images/amazon.png" class="img-responsive center-block" alt=""> </a> </div>
+          <div class="row vertical-align">
+
+            <div class="item col-sm-12 col-md-4 text-center">
+              <a href="https://www.dillards.com/registry/ItemList.do?&amp;registryNum=128608445" target="_blank"> <img src="images/dillards.svg" width="250px" class="img-responsive center-block" alt=""></a> 
+            </div>
+
+            <div class="item col-sm-12 col-md-4 text-center">
+              <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&amp;eventType=Wedding&amp;registryId=541822614" target="_blank"> <img src="images/bed-bath-beyond.svg" width="250px" class="img-responsive center-block" alt=""></a>
+            </div>
+
+            <div class="item col-sm-12 col-md-4 text-center">
+              <a href="https://secure.williams-sonoma.com/registry/7z5t5xhv72/registry-list.html" target="_blank"> <img src="images/williams-sonoma.svg" width="250px" class="img-responsive center-block" alt=""></a>
+            </div>
+
           </div><!-- END of LOGO SLIDE --> 
 
         </div>          
@@ -492,28 +593,22 @@
           <div class="container">
               <div class="row">
                   <div class="col-lg-10 col-lg-offset-1 text-center">
-                      <h4><strong>Start Bootstrap</strong>
-                      </h4>
-                      <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                      <h4><strong>Reese + Meg</strong></h4>
+                      <p>1042 Camellia Blvd APT 5207<br>Lafayette, LA 70508</p>
                       <ul class="list-unstyled">
-                          <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                          <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+                          <li>
+                            <i class="fa fa-envelope-o fa-fw"></i> 
+                            <a href="mailto:reeseandmeg@gmail.com">reeseandmeg@gmail.com</a>
                           </li>
                       </ul>
                       <br>
                       <ul class="list-inline">
-                          <li>
-                              <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                          </li>
-                          <li>
-                              <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                          </li>
-                          <li>
-                              <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                          </li>
+                          <!--<li><a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a></li>-->
+                          <li><a href="https://twitter.com/search?q=%23happyhawleyday" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a></li>
+                          <!--<li><a href="#"><i class="fa fa-instagram fa-fw fa-3x"></i></a></li>-->
                       </ul>
                       <hr class="small">
-                      <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                      <p class="text-muted">Copyright © Reese + Meg 2015</p>
                   </div>
               </div>
           </div>
