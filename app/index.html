@@ -1,0 +1,666 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <base href="/">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+
+  <body ng-app="reeseandmegApp" ng-controller="MainCtrl as main" class="ng-scope" style="display: block;">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <!-- Header -->
+    <header id="top" class="header header-unit">
+
+      <div id="video-bg">
+        <video autoplay loop class="fill-screen">
+          <source src="videos/sparklers.mp4" type="video/mp4">
+          <source src="videos/sparklers.webm" type="video/webm">
+          <source src="videos/sparklers.ogv" type="video/ogg">
+          Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+      </div> 
+
+      <div class="container-fluid intro-body">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <!--<h1 class="brand-heading">Reese &amp Meg</h1>
+            <p class="intro-text">We're Getting Married!<br/>June 20, 2015</p>-->
+            <div class="logo-container"></div>
+            <!--<img src="/images/header@2x.png" class="img-responsive">-->
+          </div>
+        </div>
+      </div>
+
+      <!--<a href="#about" class="btn btn-circle page-scroll" du-smooth-scroll>
+        <i class="fa fa-angle-double-down animated"></i>
+      </a>-->
+
+    </header>
+    <!-- Header -->
+
+    <!-- Navigation -->
+    <nav id="nav" ng-controller="NavCtrl as nav" bs-affix="" data-offset-top="200" class="navbar navbar-custom top-nav-fixed ng-scope">
+        
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" ng-click="nav.collapseToggle()">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="navbar-brand-container text-center">
+                  <a class="navbar-brand text-center" href="#top" du-smooth-scroll="">R+M</a>
+                </div>  
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse navbar-inner collapse" id="bs-example-navbar-collapse-1" collapse="nav.isCollapsed" style="height: 0px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#top" du-smooth-scroll="" du-scrollspy="" class=""></a>
+                    </li>
+                    <li du-scrollspy="couple" class="page-scroll">
+                        <a href="#couple" du-smooth-scroll="">THE COUPLE</a>
+                    </li>
+                    <li du-scrollspy="thebigday" class="page-scroll">
+                        <a href="#thebigday" du-smooth-scroll="">THE BIG DAY</a>
+                    </li>
+                    <!--<li du-scrollspy="bridesmaids" class="page-scroll">
+                        <a href="#bridesmaids" du-smooth-scroll>BRIDESMAIDS</a>
+                    </li>-->
+                    <!--<li du-scrollspy="groomsmen" class="page-scroll">
+                        <a href="#groomsmen" du-smooth-scroll>GROOMSMEN</a>
+                    </li>-->
+                    <li du-scrollspy="accommodations" class="page-scroll">
+                        <a href="#accommodations" du-smooth-scroll="">ACCOMMODATIONS</a>
+                    </li>
+                    <li du-scrollspy="registry" class="page-scroll active">
+                        <a href="#registry" du-smooth-scroll="">Registry</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section id="couple">
+
+      <div class="container-fluid">
+          
+        <!-- TITLE -->
+        <div class="row section-intro">
+
+          <div class="col-md-12 text-center title">
+            <h2>First Comes Love!</h2>
+            <span class="sub-title">The Couple</span>
+          </div>
+
+          <div class="col-md-10 col-md-offset-1 text-center description">
+              <span class="glyphicon glyphicon-heart intro-heart"></span>
+              <span class="intro-desc">Come celebrate with us as we tie the knot.<br>Festivities will begin with dinner, dancing, and happily-ever-afters to follow! #HappyHawleyDay</span>
+          </div>
+
+        </div>
+        <!-- END TITLE -->
+
+        <!-- BRIDE -->
+        <div class="row vertical-align">
+
+          <div class="col-xs-12 col-sm-4 col-sm-push-8">
+            <div class="profile-image">
+              <span id="meg-profile-img" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+          </div>
+          
+          <div class="col-xs-12 col-sm-8 col-sm-pull-4">
+            <div class="profile-desc">
+            <h3 class="text-right">THE BRIDE</h3>
+              <h2 class="text-right">Megan Cady Scholz</h2>
+              <p class="text-right">Meg is from a little bit of everywhere but is lucky enough to call San Antonio, TX her hometown. Meg spent her childhood teaching (read- bossing) around stuffed animals and baby dolls and now is lucky enough to teach (and a little bit of bossing) real children as an 8th grade English teacher. She attended Texas A&amp;M University, graduating in 2011 with her degree in Middle School Education. While at A&amp;M she discovered her love of photography, service, and college football.</p><p>
+              </p><p class="text-right">Meg’s loves are blogging (Read her blog here!), anything covered in glitter and TV shows that make her cry or whose target audience are teenagers half her age.</p>
+            </div>
+          </div>
+
+        </div><!-- END BRIDE -->
+        
+        <!-- GROOM -->
+        <div class="row vertical-align">
+
+          <div class="col-xs-12 col-sm-4">
+            <div class="profile-image">
+              <span id="reese-profile-img" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <div class="profile-desc">
+              <h3 class="text-left">THE GROOM</h3>
+              <h2>Maurice Addison Hawley IV</h2>
+              <p>Reese was born and raised in Shreveport, Louisiana attending C.E Byrd Highschool (A Blue Ribbon School of Excellence). Afterwards he attended Louisiana Tech University in Ruston, Louisiana and graduated with a degree in Biomedical Engineering.</p>
+            </div>
+          </div>
+
+        </div><!-- END GROOM -->
+
+      </div>       
+    </section>
+
+    <section class="parallax">
+      <div class="parallax-bg parallax-bg-1"></div>
+    </section>
+
+    <!-- THE BIG DAY-->
+    <section id="thebigday">
+
+      <div class="container-fluid">
+        
+        <!-- TITLE -->
+        <div class="row section-intro">
+
+          <div class="col-md-12 text-center title">
+            <h2>Now Comes Marriage!</h2>
+            <span class="sub-title">The Big Day</span>
+          </div>
+
+          <div class="col-md-10 col-md-offset-1 text-center description">
+            <span class="glyphicon glyphicon-heart intro-heart"></span>
+            <span class="intro-desc">The wedding ceremony will be held in the Chapel at the First Baptist Church of Shreveport, LA. The receptions will follow at the Scottish Rite Temple.</span>
+          </div>
+          
+        </div><!-- END TITLE -->
+
+        <!-- LOCATION, DATE&TIME, ACCOMODATION-->
+        <div class="row">
+
+          <div class="col-xs-12 col-md-4">
+
+            <div class="row">
+            
+              <div class="col-xs-12">
+                <div class="ceremony">
+                  <h3>Ceremony</h3>
+                  <i class="new-year-proposals-wedding15"></i>
+                  <span class="event-time">5:30</span><br>
+                </div>
+              </div>
+
+              <div class="hidden-xs col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2">
+                <div id="curly-brace">
+                  <div id="left" class="brace"></div>
+                  <div id="right" class="brace"></div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 text-center">
+                <address>
+                  <strong>First Baptist Church Shreveport</strong><br>
+                  Frost Chapel<br>
+                  543 Ockley Drive<br>
+                  Shreveport, LA 71106<br>
+                  <abbr title="Phone">P:</abbr> (318) 865-8414
+                </address>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-xs-12 col-md-8">
+
+            <div class="row">
+
+              <div class="col-xs-12 col-sm-6">
+                <div class="reception">
+                  <h3>Reception</h3>
+                  <i class="celebrations-musical7"></i>
+                  <span class="event-time">6:00</span><br>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <div class="send-off">
+                  <h3>Send Off</h3>
+                  <i class="new-year-proposals-toast1"></i>
+                  <span class="event-time">10:30</span>
+                </div>
+              </div>
+
+              <div class="hidden-xs col-sm-12">
+
+                <div id="curly-brace">
+                  <div id="left" class="brace"></div>
+                  <div id="right" class="brace"></div>
+                </div>
+
+              </div>
+              
+              <div class="col-xs-12 text-center"> 
+
+                <strong>Shreveport Scottish Rite</strong><br>
+                Ballroom<br>
+                725 Cotton Street<br>
+                Shreveport, LA 71101<br>
+                <abbr title="Phone">P:</abbr> (318) 221-9713
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--<section id="directions" class="cover">
+
+        <!-- MAP --
+        <div class="row">
+          <div class="col-md-12">
+            <ui-gmap-google-map id="location_map" center="main.map.center" zoom="main.map.zoom" options="main.map.options">
+
+              <ui-gmap-marker coords="main.marker.coords" idkey="main.marker.id"></ui-gmap-marker>
+
+            </ui-gmap-google-map>
+          </div>
+        </div><!-- END OF MAP--
+
+    </section>-->
+
+    <section id="accommodations">
+
+      <div class="container-fluid">
+
+        <!-- TITLE -->
+        <div class="row section-intro">
+
+          <div class="col-md-12 text-center title">
+            <h2>Friends and Family</h2>
+            <span class="sub-title">Accommodations</span>
+          </div>
+
+          <div class="col-md-10 col-md-offset-1 text-center description">
+            <span class="glyphicon glyphicon-heart intro-heart"></span>
+            <span class="intro-desc">The Courtyard Marriott Louisiana Boardwalk will be offering a special discounted rate for our wedding guests. Please reference the Scholz/Hawley Wedding when booking your room.</span>
+          </div>
+          
+        </div><!-- END TITLE -->
+
+        <div class="row vertical-align">
+
+           <div class="col-xs-12 col-sm-4">
+
+            <div class="hotel fairfield text-center">
+              <h2>Hilton Shreveport</h2>
+              <address>
+                104 MARKET STREET<br>
+                SHREVEPORT, LOUISIANA, 71101<br>
+                <abbr title="Phone">P:</abbr> (318) 698-0900
+              </address>
+              <a class="ghost-button-full-color" href="http://www3.hilton.com/en/hotels/louisiana/hilton-shreveport-SHVSPHF/index.html" target="_blank">MORE INFO</a>
+            </div>
+
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+
+            <div class="hotel fairfield text-center">
+              <h2>Courtyard Marriott Louisiana Boardwalk</h2>
+              <address>
+                100 Boardwalk Boulevard<br>
+                Bossier City  Louisiana  71111<br>
+                <abbr title="Phone">P:</abbr> (318) 742-8300
+              </address>
+              <a class="ghost-button-full-color" href="http://www.marriott.com/hotels/travel/shvsb-courtyard-shreveport-bossier-city-louisiana-boardwalk/" target="_blank">MORE INFO</a>
+            </div>
+
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+
+            <div class="hotel eldorado text-center">
+              <h2>Eldorado Resort Casino Shreveport</h2>
+              <address>
+                451 Clyde Fant Parkway<br>
+                Shreveport, LA 71101<br>
+                <abbr title="Phone">P:</abbr> +1-877-613-0711
+              </address>
+              <a class="ghost-button-full-color" href="http://www.eldoradoshreveport.com" target="_blank">MORE INFO</a>
+            </div>
+
+          </div>
+
+        </div><!-- END OF LOCATION -->
+            
+      </div>
+    </section><!--END THE BIG DAY SECTION-->
+
+    <section class="parallax">
+      <div class="parallax-bg parallax-bg-2"></div>
+    </section>
+
+    <!--<section id="bridesmaids">
+
+      <div class="container">
+
+        <div class="row">
+            <div id="bridesmaid_title" class="col-md-12 text-center the_title animation fadeInUp animated" style="visibility: visible;">
+                <h2 class="margin0 padding0">BRIDESMAID</h2>
+                  <span class="margin0 padding0 sub_title">PRETTY FRIENDS</span>
+              </div>
+              <div class="col-md-offset-1"></div>
+              <div id="bridesmaid_intro" class="col-md-10 col-md-offset-1 text-center animation delay1 fadeInUp animated" style="visibility: visible;">
+                  <span class="glyphicon glyphicon-heart intro_heart"></span>
+                  <span class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus, leo at pretium commodo, dui ipsum tristique dolor, in ullamcorper tellus velit quis nisl. In placerat volutpat elit quis dictum. Ut id sem nec mauris lacinia rhoncus.</span>
+              </div>
+          </div>
+
+          <div class="Grid">
+
+            <div class="Grid-cell Grid-cell-img">
+              <span id="bridesmaid-img-1" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+
+            <div class="Grid-cell Grid-cell-img">
+              <span id="bridesmaid-img-1" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+
+            <div class="Grid-cell Grid-cell-img">
+              <span id="bridesmaid-img-1" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+
+            <div class="Grid-cell Grid-cell-img">
+              <span id="bridesmaid-img-1" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+
+            <div class="Grid-cell Grid-cell-img">
+              <span id="bridesmaid-img-1" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+
+            <div class="Grid-cell Grid-cell-img">
+              <span id="bridesmaid-img-1" role="img">
+                <span class="inner"></span>
+              </span>
+            </div>
+
+          </div>
+          
+          <!-- BRIDESMAID ROW
+          <div class="row">
+            <div class="col-md-4 col-sm-6 photo_col animation fadeIn animated" style="visibility: visible;">
+                <div class="photo_item">
+                    <div class="photo_item_preview">
+                        <a href="#">
+                            <img src="images/bridesmaids/katie@2x.jpg" alt="">
+                          </a>
+                        <div class="photo_item_overlay">
+                          <a href="#">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                              </a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">KATIE BETH BRUXVOORT</h4>
+                      <p>Matron of Honor</p>
+                  </div>
+              </div>
+              
+              <div class="col-md-4 col-sm-6 photo_col animation delay1 fadeIn animated" style="visibility: visible;">
+                <div class="photo_item">
+                    <div class="photo_item_preview">
+                        <a href="#">
+                            <img src="images/bridesmaids/steph@2x.jpg" alt="">
+                          </a>
+                        <div class="photo_item_overlay">
+                          <a href="#">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                              </a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">STEPH RAY</h4>
+                      <p>Best Friend</p>
+                  </div>
+              </div>
+              
+              <div class="col-md-4 col-sm-6 photo_col animation delay2 fadeIn animated" style="visibility: visible;">
+                <div class="photo_item">
+                    <div class="photo_item_preview">
+                        <a href="#">
+                            <img src="images/bridesmaids/erin@2x.jpg" alt="">
+                          </a>
+                        <div class="photo_item_overlay">
+                          <a href="#">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                              </a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">ERIN ANDERSON</h4>
+                      <p>Room Mate</p>
+                  </div>
+              </div>           
+
+            <div class="col-md-4 col-sm-6 photo_col animation fadeIn animated" style="visibility: visible;">
+                <div class="photo_item">
+                    <div class="photo_item_preview">
+                        <a href="#">
+                            <img src="images/bridesmaids/kaitlyn@2x.jpg" alt="">
+                          </a>
+                        <div class="photo_item_overlay">
+                          <a href="#">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                              </a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">KAITLYN HEBERT</h4>
+                      <p>Best Friend</p>
+                  </div>
+              </div>
+              
+              <div class="col-md-4 col-sm-6 photo_col animation delay1 fadeIn animated" style="visibility: visible;">
+                <div class="photo_item">
+                    <div class="photo_item_preview">
+                        <a href="#">
+                            <img src="images/bridesmaids/jess@2x.jpg" alt="">
+                          </a>
+                        <div class="photo_item_overlay">
+                          <a href="#">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                              </a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">JESSICA MASSEY</h4>
+                      <p>Best Friend</p>
+                  </div>
+              </div>
+              
+              <div class="col-md-4 col-sm-6 photo_col animation delay2 fadeIn animated" style="visibility: visible;">
+                <div class="photo_item">
+                    <div class="photo_item_preview">
+                        <a href="#">
+                            <img src="images/bridesmaids/elizabeth@2x.jpg" alt="">
+                          </a>
+                        <div class="photo_item_overlay">
+                          <a href="#">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                              </a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">ELIZABETH HAWLEY</h4>
+                      <p>Future Sister in Law</p>
+                  </div>
+              </div>
+          
+          </div><!-- END BRIDESMAID ROW-->
+        
+      
+
+      <!-- RSVP -->
+      <!-- RSVP -->
+
+     <!--REGISTRY SECTION START-->
+      <section id="registry">
+
+        <div class="container-fluid">
+          <!-- TITLE -->
+          <div class="row section-intro">
+
+            <div class="col-md-12 text-center title">
+              <h2>Wish List</h2>
+              <span class="sub-title">Registry</span>
+            </div>
+
+            <div class="col-md-10 col-md-offset-1 text-center description">
+              <span class="glyphicon glyphicon-heart intro-heart"></span>
+              <span class="intro-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus, leo at pretium commodo, dui ipsum tristique dolor, in ullamcorper tellus velit quis nisl. In placerat volutpat elit quis dictum. Ut id sem nec mauris lacinia rhoncus.</span>
+            </div>
+            
+          </div><!-- END TITLE -->
+
+          <!-- LOGO SLIDE -->
+          <div class="row vertical-align">
+
+            <div class="item col-sm-12 col-md-4 text-center">
+              <a href="https://www.dillards.com/registry/ItemList.do?&amp;registryNum=128608445" target="_blank"> <img src="images/dillards.svg" width="250px" class="img-responsive center-block" alt=""></a> 
+            </div>
+
+            <div class="item col-sm-12 col-md-4 text-center">
+              <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&amp;eventType=Wedding&amp;registryId=541822614" target="_blank"> <img src="images/bed-bath-beyond.svg" width="250px" class="img-responsive center-block" alt=""></a>
+            </div>
+
+            <div class="item col-sm-12 col-md-4 text-center">
+              <a href="https://secure.williams-sonoma.com/registry/7z5t5xhv72/registry-list.html" target="_blank"> <img src="images/williams-sonoma.svg" width="250px" class="img-responsive center-block" alt=""></a>
+            </div>
+
+          </div><!-- END of LOGO SLIDE --> 
+
+        </div>          
+      </section><!--END of REGISTRY SECTION-->
+
+
+
+      <!-- Footer -->
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-10 col-lg-offset-1 text-center">
+                      <h4><strong>Reese + Meg</strong></h4>
+                      <p>1042 Camellia Blvd APT 5207<br>Lafayette, LA 70508</p>
+                      <ul class="list-unstyled">
+                          <li>
+                            <i class="fa fa-envelope-o fa-fw"></i> 
+                            <a href="mailto:name@example.com">reeseandmeg@gmail.com</a>
+                          </li>
+                      </ul>
+                      <br>
+                      <ul class="list-inline">
+                          <!--<li><a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a></li>-->
+                          <li><a href="https://twitter.com/search?q=%23happyhawleyday" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a></li>
+                          <!--<li><a href="#"><i class="fa fa-instagram fa-fw fa-3x"></i></a></li>-->
+                      </ul>
+                      <hr class="small">
+                      <p class="text-muted">Copyright © Reese + Meg 2015</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <!-- Footer -->
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+    <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="bower_components/ScrollMagic/js/jquery.scrollmagic.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/nav.js"></script>
+        <script src="scripts/custom-scripts.js"></script>
+        <!-- endbuild -->
+
+    
+</body>
+</html>
