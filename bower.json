@@ -16,7 +16,7 @@
     "font-awesome": "~4.2.0",
     "angular-scroll": "~0.6.4",
     "compass-mixins": "~1.0.2",
-    "angular-google-maps": "~2.0.12",
+  "angular-google-maps": "~2.0.19",
     "ScrollMagic": "~1.3.0"
   },
   "devDependencies": {

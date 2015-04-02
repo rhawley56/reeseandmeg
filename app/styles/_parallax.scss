@@ -1,48 +1,43 @@
 .parallax {
+    position: relative;
+    overflow: hidden;
+    height: 80vh !important;
+    width: 100vw;
+}
 
-  position: relative;
-  overflow: hidden;
-
-  min-height: 50vh !important;
-  //height: 350px;
-  width: 100%;
-
-  .parallax-bg {
-
+.parallax .parallax-bg {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+}
 
+.parallax .parallax-bg.parallax-bg-1 {
+    background: url(/images/engagements-02@1x.jpg) no-repeat center center;
+    background-size: auto 100vh;
+}
 
-    &.parallax-bg-1 {
-      background: url(/images/engagements-02@1x.jpg) no-repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      //background-size: contain;
+@media (min-width: 1280px) {
+
+    .parallax .parallax-bg.parallax-bg-1 {
+        background-size: 100vw auto;
     }
+}
 
-    &.parallax-bg-2 {
-      background: url(/images/engagements-03@1x.jpg) no-repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+.parallax .parallax-bg.parallax-bg-2 {
+    background: url(/images/engagements-03@1x.jpg) no-repeat center center;
+    background-size: auto 100vh;
+}
+
+@media (min-width: 1280px) {
+
+    .parallax .parallax-bg.parallax-bg-2 {
+        background-size: 100vw auto;
     }
-
-  }
 }
 
 #spacer2 {
-  background: url(/images/wedding-photo.jpg) no-repeat center 35%;
-  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-  color: white;
-
-  height: 500px;
+    background: url(/images/wedding-photo.jpg) no-repeat center 35%;
+    background-size: cover;
+    color: white;
+    height: 500px;
 }

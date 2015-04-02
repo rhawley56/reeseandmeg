@@ -1,0 +1,439 @@
+@font-face {
+	font-family: "Celebrations";
+	src: url("/fonts/celebrations/celebrations.eot");
+	src: url("/fonts/celebrations/celebrations.eot#iefix") format("embedded-opentype"),
+	url("/fonts/celebrations/celebrations.woff") format("woff"),
+	url("/fonts/celebrations/celebrations.ttf") format("truetype"),
+	url("/fonts/celebrations/celebrations.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="celebrations-"]:before, [class*=" celebrations-"]:before,
+[class^="celebrations-"]:after, [class*=" celebrations-"]:after {   
+	font-family: Celebrations;
+    font-size: 20px;
+	font-style: normal;
+	margin-left: 20px;
+}
+
+.celebrations-afro:before {
+	content: "\e000";
+}
+.celebrations-amplifier1:before {
+	content: "\e001";
+}
+.celebrations-amplifier:before {
+	content: "\e002";
+}
+.celebrations-angelic:before {
+	content: "\e003";
+}
+.celebrations-arch:before {
+	content: "\e004";
+}
+.celebrations-artificial:before {
+	content: "\e005";
+}
+.celebrations-bad:before {
+	content: "\e006";
+}
+.celebrations-bear2:before {
+	content: "\e007";
+}
+.celebrations-beer5:before {
+	content: "\e008";
+}
+.celebrations-birthday3:before {
+	content: "\e009";
+}
+.celebrations-birthday4:before {
+	content: "\e00a";
+}
+.celebrations-birthday5:before {
+	content: "\e00b";
+}
+.celebrations-birthday:before {
+	content: "\e00c";
+}
+.celebrations-biscuits:before {
+	content: "\e00d";
+}
+.celebrations-bouquet:before {
+	content: "\e00e";
+}
+.celebrations-broken1:before {
+	content: "\e00f";
+}
+.celebrations-bunch:before {
+	content: "\e010";
+}
+.celebrations-burger1:before {
+	content: "\e011";
+}
+.celebrations-burning:before {
+	content: "\e012";
+}
+.celebrations-cake1:before {
+	content: "\e013";
+}
+.celebrations-candy:before {
+	content: "\e014";
+}
+.celebrations-celebration1:before {
+	content: "\e015";
+}
+.celebrations-celebration2:before {
+	content: "\e016";
+}
+.celebrations-celebration3:before {
+	content: "\e017";
+}
+.celebrations-celebration4:before {
+	content: "\e018";
+}
+.celebrations-celebration5:before {
+	content: "\e019";
+}
+.celebrations-celebration6:before {
+	content: "\e01a";
+}
+.celebrations-celebration7:before {
+	content: "\e01b";
+}
+.celebrations-celebration8:before {
+	content: "\e01c";
+}
+.celebrations-children:before {
+	content: "\e01d";
+}
+.celebrations-chinese2:before {
+	content: "\e01e";
+}
+.celebrations-chocolate:before {
+	content: "\e01f";
+}
+.celebrations-christmas2:before {
+	content: "\e020";
+}
+.celebrations-christmas3:before {
+	content: "\e021";
+}
+.celebrations-circular13:before {
+	content: "\e022";
+}
+.celebrations-clown:before {
+	content: "\e023";
+}
+.celebrations-cocktail7:before {
+	content: "\e024";
+}
+.celebrations-console:before {
+	content: "\e025";
+}
+.celebrations-couple12:before {
+	content: "\e026";
+}
+.celebrations-couple13:before {
+	content: "\e027";
+}
+.celebrations-couple14:before {
+	content: "\e028";
+}
+.celebrations-couple15:before {
+	content: "\e029";
+}
+.celebrations-couple16:before {
+	content: "\e02a";
+}
+.celebrations-couple17:before {
+	content: "\e02b";
+}
+.celebrations-couple18:before {
+	content: "\e02c";
+}
+.celebrations-couple19:before {
+	content: "\e02d";
+}
+.celebrations-couple20:before {
+	content: "\e02e";
+}
+.celebrations-couple21:before {
+	content: "\e02f";
+}
+.celebrations-couple22:before {
+	content: "\e030";
+}
+.celebrations-covered1:before {
+	content: "\e031";
+}
+.celebrations-devil1:before {
+	content: "\e032";
+}
+.celebrations-devil:before {
+	content: "\e033";
+}
+.celebrations-dj:before {
+	content: "\e034";
+}
+.celebrations-drummer:before {
+	content: "\e035";
+}
+.celebrations-email5:before {
+	content: "\e036";
+}
+.celebrations-energy5:before {
+	content: "\e037";
+}
+.celebrations-five:before {
+	content: "\e038";
+}
+.celebrations-fried1:before {
+	content: "\e039";
+}
+.celebrations-fruit:before {
+	content: "\e03a";
+}
+.celebrations-glass4:before {
+	content: "\e03b";
+}
+.celebrations-glasses4:before {
+	content: "\e03c";
+}
+.celebrations-happy3:before {
+	content: "\e03d";
+}
+.celebrations-happy4:before {
+	content: "\e03e";
+}
+.celebrations-heart21:before {
+	content: "\e03f";
+}
+.celebrations-heart22:before {
+	content: "\e040";
+}
+.celebrations-heart23:before {
+	content: "\e041";
+}
+.celebrations-heart24:before {
+	content: "\e042";
+}
+.celebrations-heart25:before {
+	content: "\e043";
+}
+.celebrations-heart26:before {
+	content: "\e044";
+}
+.celebrations-heart28:before {
+	content: "\e045";
+}
+.celebrations-heart29:before {
+	content: "\e046";
+}
+.celebrations-heart30:before {
+	content: "\e047";
+}
+.celebrations-hot15:before {
+	content: "\e048";
+}
+.celebrations-hot16:before {
+	content: "\e049";
+}
+.celebrations-hot17:before {
+	content: "\e04a";
+}
+.celebrations-hot18:before {
+	content: "\e04b";
+}
+.celebrations-i11:before {
+	content: "\e04c";
+}
+.celebrations-icecream5:before {
+	content: "\e04d";
+}
+.celebrations-inlove:before {
+	content: "\e04e";
+}
+.celebrations-invitation:before {
+	content: "\e04f";
+}
+.celebrations-kid:before {
+	content: "\e050";
+}
+.celebrations-king3:before {
+	content: "\e051";
+}
+.celebrations-knitted:before {
+	content: "\e052";
+}
+.celebrations-limit:before {
+	content: "\e053";
+}
+.celebrations-little42:before {
+	content: "\e054";
+}
+.celebrations-localization:before {
+	content: "\e055";
+}
+.celebrations-looking3:before {
+	content: "\e056";
+}
+.celebrations-looking4:before {
+	content: "\e057";
+}
+.celebrations-love2:before {
+	content: "\e058";
+}
+.celebrations-love3:before {
+	content: "\e059";
+}
+.celebrations-love5:before {
+	content: "\e05a";
+}
+.celebrations-love6:before {
+	content: "\e05b";
+}
+.celebrations-love7:before {
+	content: "\e05c";
+}
+.celebrations-magician1:before {
+	content: "\e05d";
+}
+.celebrations-magic:before {
+	content: "\e05e";
+}
+.celebrations-male8:before {
+	content: "\e05f";
+}
+.celebrations-man75:before {
+	content: "\e060";
+}
+.celebrations-man82:before {
+	content: "\e061";
+}
+.celebrations-man83:before {
+	content: "\e062";
+}
+.celebrations-mic1:before {
+	content: "\e063";
+}
+.celebrations-mirrors:before {
+	content: "\e064";
+}
+.celebrations-more:before {
+	content: "\e065";
+}
+.celebrations-muffin2:before {
+	content: "\e066";
+}
+.celebrations-music16:before {
+	content: "\e067";
+}
+.celebrations-musical7:before {
+	content: "\e068";
+}
+.celebrations-one5:before {
+	content: "\e069";
+}
+.celebrations-opening1:before {
+	content: "\e06a";
+}
+.celebrations-opening:before {
+	content: "\e06b";
+}
+.celebrations-party1:before {
+	content: "\e06c";
+}
+.celebrations-party2:before {
+	content: "\e06d";
+}
+.celebrations-pass:before {
+	content: "\e06e";
+}
+.celebrations-photo8:before {
+	content: "\e06f";
+}
+.celebrations-piece5:before {
+	content: "\e070";
+}
+.celebrations-piece:before {
+	content: "\e071";
+}
+.celebrations-pinwheel:before {
+	content: "\e072";
+}
+.celebrations-pirate:before {
+	content: "\e073";
+}
+.celebrations-pizza4:before {
+	content: "\e074";
+}
+.celebrations-pop:before {
+	content: "\e075";
+}
+.celebrations-present3:before {
+	content: "\e076";
+}
+.celebrations-ring5:before {
+	content: "\e077";
+}
+.celebrations-romantic2:before {
+	content: "\e078";
+}
+.celebrations-romantic3:before {
+	content: "\e079";
+}
+.celebrations-sand:before {
+	content: "\e07a";
+}
+.celebrations-sax:before {
+	content: "\e07b";
+}
+.celebrations-seven:before {
+	content: "\e07c";
+}
+.celebrations-sincerity:before {
+	content: "\e07d";
+}
+.celebrations-solid16:before {
+	content: "\e07e";
+}
+.celebrations-solid17:before {
+	content: "\e07f";
+}
+.celebrations-sound6:before {
+	content: "\e080";
+}
+.celebrations-stars:before {
+	content: "\e081";
+}
+.celebrations-striped3:before {
+	content: "\e082";
+}
+.celebrations-sweet6:before {
+	content: "\e083";
+}
+.celebrations-tshirt2:before {
+	content: "\e084";
+}
+.celebrations-two28:before {
+	content: "\e085";
+}
+.celebrations-type:before {
+	content: "\e086";
+}
+.celebrations-valentines:before {
+	content: "\e087";
+}
+.celebrations-vip2:before {
+	content: "\e088";
+}
+.celebrations-volume14:before {
+	content: "\e089";
+}
+.celebrations-xmas1:before {
+	content: "\e08a";
+}
+.celebrations-xmas:before {
+	content: "\e08b";
+}

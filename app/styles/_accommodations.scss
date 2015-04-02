@@ -1,0 +1,158 @@
+#accommodations {
+    background-color: #fff;
+    border: none;
+}
+
+#accommodations .row {
+    padding-bottom: 50px;
+}
+
+@media (min-width: 767px) {
+
+    #accommodations .vertical-align {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: stretch;
+        align-items: stretch;
+    }
+
+    #accommodations .vertical-align > [class^="col-"], #accommodations .vertical-align > [class*=" col-"] {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: space-around;
+        align-items: space-around;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    #accommodations .vertical-align > [class^="col-"] .hotel, #accommodations .vertical-align > [class*=" col-"] .hotel {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-content: space-between;
+        align-content: space-between;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+
+    #accommodations .vertical-align > [class^="col-"] .hotel > a, #accommodations .vertical-align > [class*=" col-"] .hotel > a {
+        display: block;
+    }
+}
+
+#curly-brace {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.brace {
+    border-bottom: 5px solid;
+    margin: 0 10%;
+    width: 30%;
+    height: 20px;
+    float: left;
+}
+
+.brace:before,
+.brace:after {
+    content: "";
+    width: 10%;
+    height: 50px;
+    position: absolute;
+    display: block;
+}
+
+#left:before {
+    border-bottom: 5px solid;
+    border-bottom-left-radius: 20px;
+    margin-left: -10%;
+    margin-top: -30px;
+}
+
+#left:after {
+    border-top: 5px solid;
+    border-top-right-radius: 20px;
+    margin-left: 30%;
+    margin-top: 15px;
+}
+
+#right:before {
+    border-top: 5px solid;
+    border-top-left-radius: 20px;
+    margin-left: -10%;
+    margin-top: 15px;
+}
+
+#right:after {
+    border-bottom: 5px solid;
+    border-bottom-right-radius: 20px;
+    margin-left: 30%;
+    margin-top: -30px;
+}
+
+.ghost-button-full-color {
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 auto;
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #2c3e50;
+    background-color: transparent;
+    border: 2px solid #2c3e50;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+}
+
+.ghost-button-full-color:hover,
+.ghost-button-full-color:active {
+    text-decoration: none;
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    color: #fff;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+}
+
+.box {
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.box_icon {
+    background-color: #00c0b6;
+    margin-top: -1px;
+    padding: 18px;
+    height: 60px;
+    width: 60px;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.box_title {
+    padding-left: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #444444;
+}
+
+.box_text {
+    padding: 20px 25px;
+}
+
+#location_map {
+    width: 100%;
+    height: 450px;
+}
+
+.angular-google-map-container {
+    width: 100%;
+    height: 400px;
+}

@@ -1,0 +1,48 @@
+.parallax {
+
+  position: relative;
+  overflow: hidden;
+
+  min-height: 50vh !important;
+  //height: 350px;
+  width: 100%;
+
+  .parallax-bg {
+
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+
+
+    &.parallax-bg-1 {
+      background: url(/images/engagements-02@1x.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      //background-size: contain;
+    }
+
+    &.parallax-bg-2 {
+      background: url(/images/engagements-03@1x.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+  }
+}
+
+#spacer2 {
+  background: url(/images/wedding-photo.jpg) no-repeat center 35%;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  color: white;
+
+  height: 500px;
+}

@@ -1,42 +1,91 @@
-/*========================*/
-/* 03. COUPLE        	  */
-/*========================*/
-
-/* 03-1 His/Her Profile */
-/* ----------------------- */
-
 #couple {
+    background-color: #fff;
+}
 
-	padding-bottom: 100px;
+#couple .row {
+    padding-bottom: 50px;
+}
 
-	.profile{
-		background-color:#fff; 
-		padding:25px 20px
-	}
+@media (min-width: 767px) {
 
-	.subname {
-		font-family: 'Montserrat', sans-serif; 
-		font-size:22px; 
-		line-height:20px; 
-		color:#8b8a8a
-	}
+    #couple .vertical-align {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
 
-	.profile_text{
-		margin-top:10px;
-	}
+    #couple .vertical-align > [class^="col-"], #couple .vertical-align > [class*=" col-"] {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+}
 
-	/* 03-2 Popup Content */
-	/* ----------------------- */
-	.popup_content{
-		width:60%; 
-		margin:30px auto; 
-		background-color:#FFF; 
-		height:100%;
-		padding:30px
-	}
+#couple .profile-image {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
 
-	.popup_content img{
-		width:100%;
-		margin:20px 0 20px 0
-	}
+#couple .profile-image #reese-profile-img {
+    width: 100%;
+    max-height: 250px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("/images/reese-profile.png");
+    border-radius: 125px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    #couple .profile-image #reese-profile-img {
+        background-image: url("/images/reese-profile@2x.png");
+        background-size: contain;
+    }
+}
+
+#couple .profile-image #reese-profile-img .inner {
+    padding-top: 100%;
+    /* height/width of image */
+    display: block;
+    height: 0;
+}
+
+#couple .profile-image #meg-profile-img {
+    width: 100%;
+    max-height: 250px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("/images/meg-profile.png");
+    border-radius: 125px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    #couple .profile-image #meg-profile-img {
+        background-image: url("/images/meg-profile@2x.png");
+        background-size: contain;
+    }
+}
+
+#couple .profile-image #meg-profile-img .inner {
+    padding-top: 100%;
+    /* height/width of image */
+    display: block;
+    height: 0;
+}
+
+#couple .profile-desc {
+    font-size: 15px;
+}
+
+#couple .profile-desc h2 {
+    font-family: 'Umbrella';
+    color: #1db577;
 }

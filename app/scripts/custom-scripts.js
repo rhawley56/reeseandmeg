@@ -13,34 +13,51 @@
         // update window height on resize
         jQuery(window).on("resize", function () {
             fillTopper();
-            //console.log(windowHeight);
+            console.log(windowHeight);
         }); 
 
-        fillTopper();                         
+        fillTopper();   
+
+        var controller0 = new ScrollMagic();     
+        new ScrollScene({triggerElement: "#nav", triggerHook: '0'})
+                        .on("enter leave", function (e) {
+                            //$("#state").text(e.type == "enter" ? "inside" : "outside");
+                            var vid = jQuery("#video-bg video").get(0); 
+                            if(e.type=="enter"){
+                                vid.pause();
+                                jQuery("#video-bg").hide(); 
+                            }
+                            else {
+                                vid.play();
+                                jQuery("#video-bg").show(); 
+                            }
+                        })
+                        .addTo(controller0);
+                        //.addIndicators({zindex: 10, suffix: "1"});        
 
         // init controller
-        var controller = new ScrollMagic();
+        var controller1 = new ScrollMagic();
 
         new ScrollScene({triggerElement: "#nav", triggerHook: '0'})
                         .setPin("#nav")
                         .setClassToggle(".navbar", "top-nav-collapse navbar-fixed-top")
-                        .addTo(controller);
+                        .addTo(controller1);
                         //.addIndicators({zindex: 10, suffix: "1"});
-
-        var controller1 = new ScrollMagic();
-
-        new ScrollScene({triggerElement: ".parallax-bg-1", duration: $(window).height() + $('.parallax').height(), offset: 0})
-        .triggerHook("onEnter")
-        .setTween(TweenMax.fromTo(".parallax-bg-1", 1, {'background-position-y': "-400px", ease: Linear.easeNone},{'background-position-y': "-200px", ease: Linear.easeNone}))
-        .addTo(controller1);
-        //.addIndicators({zindex: 1, suffix: "Parallax1"});
 
         var controller2 = new ScrollMagic();
 
+        new ScrollScene({triggerElement: ".parallax-bg-1", duration: $(window).height() + $('.parallax').height(), offset: 0})
+        .triggerHook("onEnter")
+        .setTween(TweenMax.fromTo(".parallax-bg-1", 1, {'background-position': "50% -30vh", ease: Linear.easeNone},{'background-position': "50% 0vh", ease: Linear.easeNone}))
+        .addTo(controller2);
+        //.addIndicators({zindex: 1, suffix: "Parallax1"});
+
+        var controller3 = new ScrollMagic();
+
         new ScrollScene({triggerElement: ".parallax-bg-2", duration: $(window).height() + $('.parallax').height(), offset: 0})
         .triggerHook("onEnter")
-        .setTween(TweenMax.fromTo(".parallax-bg-2", 1, {'background-position-y': "-400px", ease: Linear.easeNone},{'background-position-y': "-200px", ease: Linear.easeNone}))
-        .addTo(controller2);
+        .setTween(TweenMax.fromTo(".parallax-bg-2", 1, {'background-position': "50% -30vh", ease: Linear.easeNone},{'background-position': "50% 10vh", ease: Linear.easeNone}))
+        .addTo(controller3);
         //.addIndicators({zindex: 1, suffix: "Parallax2"});           
     }); 
 

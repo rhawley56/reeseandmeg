@@ -80,4 +80,4 @@ angular.module('reeseandmegApp')
 
   })
   .value('duScrollOffset', 50)
-  .value('duScrollDuration', 2000);
+  .value('duScrollDuration', 1000);

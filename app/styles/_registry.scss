@@ -1,0 +1,31 @@
+#registry {
+    border: none;
+    background-color: #fff;
+}
+
+#registry .row {
+    padding-bottom: 50px;
+}
+
+#registry .item {
+    padding-bottom: 35px;
+}
+
+@media (min-width: 767px) {
+
+    #registry .vertical-align {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+
+    #registry .vertical-align > [class^="col-"], #registry .vertical-align > [class*=" col-"] {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+}

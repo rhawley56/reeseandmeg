@@ -1,149 +1,171 @@
 #top {
-  /**height: 100%;
-  background: black;
-  color: white;
-  overflow: hidden;
-  position: relative;**/
+    /**height: 100%;
+      background: black;
+      color: white;
+      overflow: hidden;
+      position: relative;**/
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+}
 
-  display: table;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  color: #fff;
+#top .intro-body {
+    display: table-cell;
+}
 
-  .intro-body {
-      display: table-cell;
-      //vertical-align: middle;
-  }
-
-  .brand-heading {
+#top .brand-heading {
     font-size: 40px;
-  }
+}
 
-  .intro-text {
+#top .intro-text {
     font-size: 18px;
-  }
+}
 
-  @media(min-width:767px) {
+@media (min-width: 767px) {
 
-    height: 100%;
-    padding: 0;
+    #top {
+        height: 100%;
+        padding: 0;
+    }
 
-    .brand-heading {
+    #top .brand-heading {
         font-size: 100px;
     }
 
-    .intro-text {
+    #top .intro-text {
         font-size: 25px;
     }
-  }
+}
 
-  .logo-container {
+#top .logo-container {
     height: 60vh;
     width: 100%;
     margin: 100px 0;
     background: url(/images/header.png) no-repeat center;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
     background-size: contain;
-  }
+}
 
-  .page-scroll {
+#top .page-scroll {
     position: absolute;
     left: 50%;
     bottom: 20px;
     margin-left: -35px;
-  }
+}
 
-  .btn-circle {
-      width: 70px;
-      height: 70px;
-      margin-top: 15px;
-      padding: 7px 16px;
-      border: 2px solid #fff;
-      border-radius: 35px;
-      font-size: 40px;
-      color: #fff;
-      background: 0 0;
-      -webkit-transition: background .3s ease-in-out;
-      -moz-transition: background .3s ease-in-out;
-      transition: background .3s ease-in-out;
-  }
+#top .btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    transition: background .3s ease-in-out;
+}
 
-  .btn-circle:hover,
-  .btn-circle:focus {
-      outline: 0;
-      color: #fff;
-      background: rgba(255,255,255,.1);
-  }
+#top .btn-circle:hover,
+#top .btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
 
-  .btn-circle i.animated {
-      -webkit-transition-property: -webkit-transform;
-      -webkit-transition-duration: 1s;
-      -moz-transition-property: -moz-transform;
-      -moz-transition-duration: 1s;
-  }
+#top .btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+}
 
-  .btn-circle:hover i.animated {
-      @include animation('pulse 1.5s linear infinite');
-  }
+#top .btn-circle:hover i.animated {
+    -webkit-animation: pulse 1.5s linear infinite;
+    animation: pulse 1.5s linear infinite;
+}
 
-  @include keyframes(pulse) {
-    0%   {  
-      -webkit-transform: scale(1);
-      transform: scale(1);
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
+
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-  }
 }
 
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
 
 #video-bg {
-  
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  overflow: hidden;
-  //@include ghostVerticalAlign();
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
 
-  z-index: -1;
-  
-  & > video {
+#video-bg > video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
     /* 1. No object-fit support: */
-    @media (min-aspect-ratio: 16/9) {
-        height: 300%; top: -100%;
-        /* or height: 200%; top: -50%;
-           or height: 400%; top: -150%; */
-    }
-
-    @media (max-aspect-ratio: 16/9) {
-        width: 500%; left: -200%;
-        /* or width: 200%; left: -50%;
-           or width: 400%; left: -150%; */
-    }
-
     /* 2. If supporting object-fit, overriding (1): */
-    @supports (object-fit: cover) {
-        top: 0; left: 0;
-        width: 100%; height: 100%;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+
+    #video-bg > video {
+        height: 300%;
+        top: -100%;
+        /* or height: 200%; top: -50%;
+               or height: 400%; top: -150%; */
+    }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+
+    #video-bg > video {
+        width: 500%;
+        left: -200%;
+        /* or width: 200%; left: -50%;
+               or width: 400%; left: -150%; */
+    }
+}
+
+@supports (object-fit: cover) {
+    /* line 120, ../../app/styles/_header.scss */
+    #video-bg > video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
-
-  }
-  & > div {
-    //display: inline-block;
-  }
 }

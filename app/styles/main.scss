@@ -4,9 +4,11 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstr
 @import "compass-mixins/lib/_compass.scss";
 // endbower
 
+@import "flaticon-celebrations";
+
+@import "flaticon-new-year-proposals";
 
 
-//@import "variables.scss";
 @import "mixins.scss";
 
 @import "palette.scss";
@@ -22,6 +24,8 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstr
 @import "couple";
 
 @import "the-big-day";
+
+@import "accommodations";
 
 @import "wedding-party.scss";
 
