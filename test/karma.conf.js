@@ -33,6 +33,8 @@ module.exports = function(config) {
       'bower_components/angular-google-maps/dist/angular-google-maps.js',
       'bower_components/gsap/src/uncompressed/TweenMax.js',
       'bower_components/ScrollMagic/js/jquery.scrollmagic.js',
+      'bower_components/firebase/firebase.js',
+      'bower_components/angularfire/dist/angularfire.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js'

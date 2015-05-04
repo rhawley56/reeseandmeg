@@ -7,8 +7,7 @@
  * # NavCtrl
  * Controller of the reeseandmegApp
  */
-angular.module('reeseandmegApp')
-  .controller('NavCtrl', function ($rootScope, $log) {
+app.controller('NavCtrl', function ($rootScope) {
 
   		var vm = this;
 
@@ -22,9 +21,9 @@ angular.module('reeseandmegApp')
 
     	vm.collapseToggle = function() {
     		vm.isCollapsed = !vm.isCollapsed;
-    	}
+    	};
 
-    	$rootScope.$on('duScrollspy:becameActive', function (event, data) {
+    	$rootScope.$on('duScrollspy:becameActive', function () {
 
     		//setTimeout(function() {
 

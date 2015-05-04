@@ -1,3 +1,5 @@
+/* global app:true */
+/* exported app */
 'use strict';
 
 /**
@@ -8,7 +10,7 @@
  *
  * Main module of the application.
  */
-angular
+var app = angular
   .module('reeseandmegApp', [
     'ngAnimate',
     'ngCookies',
@@ -18,7 +20,8 @@ angular
     'ngTouch',
     'ui.bootstrap',
     'duScroll',
-    'uiGmapgoogle-maps'
+    'uiGmapgoogle-maps',
+    'firebase'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -43,5 +46,7 @@ angular
         v: '3.17',
         libraries: 'places'
     });
-  });
+  })
+  .constant('FIREBASE_URI', 'https://reeseandmeg.firebaseio.com/rsvps/');
+
 
