@@ -31,7 +31,7 @@ app.controller('RsvpCtrl', ['$scope', 'Rsvp',
 				var rsvpObj = Rsvp(vm.rsvpCode);
 
 				rsvpObj.$loaded(function() {
-   					vm.dataExists = data.$value !== null;
+   					vm.dataExists = rsvpObj.$value !== null;
 				});
 
 				if(vm.dataExists) {
