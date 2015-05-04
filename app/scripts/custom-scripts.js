@@ -1,3 +1,6 @@
+/* global TweenMax:true */
+/* global Linear:true */
+
 (function() {
 
     'use strict';
@@ -24,7 +27,7 @@
                         .on("enter leave", function (e) {
                             //$("#state").text(e.type == "enter" ? "inside" : "outside");
                             //var vid = jQuery("#video-bg video").get(0); 
-                            if(e.type=="enter"){
+                            if(e.type === "enter"){
                                 vid.pause();
                                 jQuery("#video-bg").hide(); 
                             }

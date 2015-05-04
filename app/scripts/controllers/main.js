@@ -7,8 +7,7 @@
  * # MainCtrl
  * Controller of the reeseandmegApp
  */
-angular.module('reeseandmegApp')
-  .controller('MainCtrl', function ($scope, uiGmapGoogleMapApi) {
+app.controller('MainCtrl', function ($scope, uiGmapGoogleMapApi) {
 
     var vm = this;
 
@@ -37,7 +36,7 @@ angular.module('reeseandmegApp')
             placeId: 'ChIJBem33U0tMYYRinQiv96IDpI'
           }
         }
-      }
+      };
 
       //Place ID: ChIJBem33U0tMYYRinQiv96IDpI
       

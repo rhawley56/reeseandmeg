@@ -98,6 +98,9 @@
                     <li du-scrollspy="accommodations" class="page-scroll">
                         <a href="#accommodations" du-smooth-scroll="">ACCOMMODATIONS</a>
                     </li>
+                    <li du-scrollspy="rsvp" class="page-scroll">
+                        <a href="#rsvp" du-smooth-scroll>RSVP</a>
+                    </li>
                     <li du-scrollspy="registry" class="page-scroll">
                         <a href="#registry" du-smooth-scroll="">Registry</a>
                     </li>
@@ -375,6 +378,89 @@
     <!-- BRIDESMAIDS -->
 
     <!-- RSVP -->
+    <section id="rsvp" ng-controller="RsvpCtrl as rsvp" class="well">
+
+      <div class="container-fluid">
+
+        <div class="row section-intro">
+
+          <div class="col-md-12 text-center title">
+            <h2>RSVP</h2>
+            <span class="sub-title">répondez s'il vous plaît</span>
+          </div>
+
+          <div class="col-md-10 col-md-offset-1 text-center description">
+            <span class="glyphicon glyphicon-heart intro-heart"></span>
+            <span class="intro-desc">Please enter your 6-digit (case-sensitive) code that you recieved in your invitation in the box below. You will then check the boxes next to the guests in your party that wish to attend the wedding and reception.</span>
+          </div>
+          
+        </div><!-- END TITLE -->
+
+        <div class="row">
+
+          <div class="col-xs-8 col-xs-offset-2">
+
+              <form class="" ng-submit="rsvp.getData()">
+
+                <div class="form-group form-group-lg col-sm-5 col-sm-offset-2" ng-class="[rsvp.hasSuccess,rsvp.hasError]">
+                    <input  
+                      class = "form-control text-center" 
+                      type = "text"
+                      id = "rsvpCode"
+                      maxlength="6" 
+                      placeholder = "6-Digit Code"
+                      ng-change = "rsvp.checkCode()" 
+                      ng-model = "rsvp.rsvpCode"
+                    >
+                    <span class="glyphicon form-control-feedback " aria-hidden="true" ng-class="[rsvp.glyphiconOk,rsvp.glyphiconRemove]"></span>
+                </div>
+
+                <div class="form-group form-group-lg col-sm-3">
+                  <button class="btn btn-primary btn-lg btn-block" type="submit">FIND</button>
+                </div>
+
+              </form>
+
+          </div>
+
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+
+            <form class="form-horizontal" ng-submit="rsvp.saveData()" ng-hide="rsvp.updateSuccess">
+
+                <div ng-repeat="guest in rsvp.rsvpObj.guests track by guest.id">
+                  
+                  <div class="form-group form-group-lg">
+                    <div class="input-group">
+                      
+                      <input class="form-control input-lg text-center" ng-model="guest.name"/>
+                      
+                      <span class="input-group-addon btn-group-lg beautiful">
+                        <label for="response">Attending?</label>
+                        <input type="checkbox" class="" name="response" ng-model="guest.response">
+                      </span>
+                    
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="form-group form-group-lg">
+
+                  <button ng-show="rsvp.rsvpObj.guests" type="submit" class="btn btn-success btn-lg btn-block">RSVP</button>
+
+                </div>
+
+            </form>
+
+            <alert ng-repeat="alert in rsvp.alerts" type="{{alert.type}}" close="rsvp.closeAlert($index)">{{alert.msg}}</alert>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
     <!-- RSVP -->
 
     <!--REGISTRY SECTION START-->
@@ -478,15 +564,19 @@
     <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
     <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
     <script src="bower_components/ScrollMagic/js/jquery.scrollmagic.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/services/rsvp.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/nav.js"></script>
         <script src="scripts/custom-scripts.js"></script>
+        <script src="scripts/controllers/rsvp.js"></script>
         <!-- endbuild -->
         
 </body>

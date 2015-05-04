@@ -27,8 +27,10 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstr
 
 @import "accommodations";
 
-@import "wedding-party.scss";
+@import "wedding-party";
 
 @import "registry";
+
+@import "rsvp";
 
 @import "footer";
