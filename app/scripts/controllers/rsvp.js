@@ -28,10 +28,10 @@ app.controller('RsvpCtrl', ['$scope', 'Rsvp',
 
 			if(vm.rsvpCode.length === 6 ) {
 
-				var rsvpObj = Rsvp(vm.rsvpCode);
+				rsvpObj = new Rsvp(vm.rsvpCode);
 
 				rsvpObj.$loaded(function() {
-   					vm.dataExists = data.$value !== null;
+   					vm.dataExists = rsvpObj.$value !== null;
 				});
 
 				if(vm.dataExists) {
@@ -49,7 +49,7 @@ app.controller('RsvpCtrl', ['$scope', 'Rsvp',
 
 		vm.getData = function() {
 
-			var rsvpObj = Rsvp(vm.rsvpCode);
+			var rsvpObj = new Rsvp(vm.rsvpCode);
 
 			if(rsvpObj.$id === vm.rsvpCode) {
 				vm.hasSuccess = 'has-success';
@@ -63,7 +63,7 @@ app.controller('RsvpCtrl', ['$scope', 'Rsvp',
 				vm.glyphiconOk = '';
 			}
 
-		}
+		};
 
 		vm.saveData = function() {
 			vm.rsvpObj.$save();
@@ -74,7 +74,7 @@ app.controller('RsvpCtrl', ['$scope', 'Rsvp',
 				type: 'success',
 				msg: 'Thank you! You have successfully submitted your RSVP.'
 			});
-		}
+		};
 
 
 		vm.addAlert = function(alert) {
@@ -86,40 +86,4 @@ app.controller('RsvpCtrl', ['$scope', 'Rsvp',
 		};
 	}
 
-]);
-
-app.factory("RsvpService", ["$firebaseObject", "FIREBASE_URI", 
-	function ($firebaseObject, FIREBASE_URI) {
-
-		var ref = new Firebase(FIREBASE_URI);
-  		var rsvps = ref.child('rsvps');
-
-  		var getRsvps = function() {
-  			return rsvps;
-  		};
-
-  		var getRsvp = function(rsvpCode) {
-  			return rsvps.child(rsvpCode);
-  		};
-
-  		var addRsvp = function(rsvp) {
-  			rsvps.$add(rsvp);
-  		};
-
-  		var updateRsvp = function (id) {
-  			rsvps.$save(id);
-  		};
-
-  		var removeRsvp = function (id) {
-  			rsvps.$remove(id);
-  		};
-
-		return {
-			getRsvps: getRsvps,
-			getRsvp: getRsvp,
-			addRsvp: addRsvp,
-			updateRsvp: updateRsvp,
-			removeRsvp: removeRsvp
-		}
-	}
 ]);

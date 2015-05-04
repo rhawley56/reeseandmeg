@@ -8,6 +8,6 @@ app.factory('Rsvp', ['$firebaseObject', 'FIREBASE_URI',
   			var rsvpRef = ref.child(rsvpCode);
 
   			return $firebaseObject(rsvpRef);
-		}
+		};
 	}
 ]);
