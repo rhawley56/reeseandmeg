@@ -17,7 +17,7 @@
         // update window height on resize
         jQuery(window).on("resize", function () {
             fillTopper();
-            console.log(windowHeight);
+            //console.log(windowHeight);
         }); 
 
         fillTopper();   
