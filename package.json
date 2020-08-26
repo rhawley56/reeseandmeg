@@ -42,7 +42,7 @@
     "karma-phantomjs-launcher": "^0.1.4"
   },
   "engines": {
-    "node": "10.22.0"
+    "node": "6.11.1"
   },
   "scripts": {
     "test": "grunt test"
