@@ -6,10 +6,11 @@ before_install:
 
 node_js:
 - '0.10'
+services:
+- xvfb
 
 before_script:
 - "export DISPLAY=:99.0"
-- "sh -e /etc/init.d/xvfb start"
 - 'npm install -g bower grunt-cli karma'
 - 'bower install'
 
